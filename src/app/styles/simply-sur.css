@@ -1,0 +1,157 @@
+@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
+
+
+html, body {
+    padding-top: 1.79%;
+}
+
+p {
+    font-size: 160%;
+    line-height: 150%;
+    padding: 2% 2% 2% 2%;
+    text-indent: 2%;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Begin navigation */
+
+.header {
+    height: 7%;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12), 0 10px 20px rgba(0,0,0,0.24);
+}
+
+.header ul {
+    height: 100%;
+}
+
+.logo {
+    height: 100%;
+    width: inherit;
+    background-size: cover;
+    background: url("../../resources/img/RadioHead-Clothify.resized.png") no-repeat center;
+}
+
+.logo li:hover {
+    cursor: hand;
+}
+
+nav ul {
+    height: inherit;
+}
+
+nav ul li {
+    font-size: 150%;
+    height: inherit;
+}
+
+.menu-content:hover {
+    color: rgba(237, 236, 229, 0.51);
+    background-color: rgba(206, 206, 211, 0.66);
+}
+
+.menu-content {
+    padding: 2% 0 0% 0%;
+}
+
+.menu-seperator {
+    padding: 2% 0 0 0;
+    color: #454045;
+}
+
+nav ul li a {
+    /*display: block;*/
+    color: #454045;
+    height: 100%;
+    /*width: inherit;*/
+    text-align: center;
+    text-decoration: none;
+
+}
+
+nav ul li a:hover {
+    color: rgba(218, 33, 3, 0.6);
+    text-decoration: none;
+}
+
+/* End navigation */
+.carousel-home-page {
+    height: 100%;
+    min-width: 100%;
+}
+
+.second-section {
+    height: 80%;
+    background-image: url("../../resources/img/section-Two.jpg");
+    background-right: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.second-section h2 {
+    color: white;
+    background-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    padding: 2% 0 2% 18%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.second-section-content-holder {
+    margin-top: 2%;
+}
+
+.second-section .h2-content {
+    /*margin-top: 1%;*/
+}
+
+.second-section .para-content p {
+    margin: 0% 0 0% 0;
+    padding-bottom: 0%;
+}
+
+.jumbotron-home-page {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: black;
+    background: url("../../resources/img/white-background-5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.footer {
+    height: 43%;
+    background: #000000;
+    /*background: -webkit-linear-gradient(to right top, #1A2930 , whitesmoke); !* For Safari 5.1 to 6.0 *!*/
+    /*background: -o-linear-gradient(to right top, #1A2930, whitesmoke); !* For Opera 11.1 to 12.0 *!*/
+    /*background: -moz-linear-gradient(to right top, #1A2930, whitesmoke); !* For Firefox 3.6 to 15 *!*/
+    /*background: linear-gradient(to right top, #1A2930, #828081);*/
+}
+
+.social-footer {
+    text-align: center;
+    height: 18%;
+    margin-top: 5%;
+}
+
+.social-footer i {
+    font-size: 460%;
+    padding-left: 2%;
+    height: 10%;
+    color: whitesmoke;
+}
+
+.footer-copyright {
+    font-size: 150%;
+    bottom: 0;
+    margin-top: 2%;
+    padding: 0 0 0 10%;
+    color: whitesmoke;
+}
