@@ -1,0 +1,25 @@
+{
+  "name": "simplysur",
+  "description": "simplysur front end",
+  "main": "index.js",
+  "authors": [
+    "shreedhar kempanayakanahalli champakaram"
+  ],
+  "license": "UNLICENSED",
+  "keywords": [
+    "simplysue"
+  ],
+  "homepage": "https://github.com/skc382/SimplySurFrontEnd",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-bootstrap": "^2.5.0",
+    "bootstrap": "^3.3.7"
+  }
+}

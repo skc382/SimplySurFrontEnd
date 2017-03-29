@@ -1,0 +1,27 @@
+{
+  "name": "simplysur",
+  "version": "1.0.0",
+  "description": "simply sur front end",
+  "main": "index.js",
+  "dependencies": {
+    "bower": "^1.8.0",
+    "angular-ui-router": "^0.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skc382/SimplySurFrontEnd.git"
+  },
+  "keywords": [
+    "simplysur"
+  ],
+  "author": "shreedhar kempanayakanahalli champakaram",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/skc382/SimplySurFrontEnd/issues"
+  },
+  "homepage": "https://github.com/skc382/SimplySurFrontEnd#readme"
+}
