@@ -13,12 +13,16 @@ p {
     text-align: justify;
 }
 
+a {
+    font-size: 90%;
+}
+
 ul {
     list-style-type: none;
 }
 
 .content-container {
-    background-color: #dbdbdb;
+    background-color: #e5dde4;
     min-height: 100%;
 }
 
@@ -26,7 +30,7 @@ ul {
     display: none !important;
 }
 
-/* Begin navigation */
+/*************************************  Begin navigation **********************************************/
 
 .header {
     height: 7%;
@@ -87,57 +91,14 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-/* End navigation */
-.carousel-home-page {
-    height: 90%;
-    min-width: 100%;
-}
+/*************************************  End Navigation **********************************************/
 
-.second-section {
-    height: 80%;
-    background-image: url("../../resources/img/section-Two.jpg");
-    background-right: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
 
-.second-section h2 {
-    color: white;
-    background-color: black;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-    padding: 2% 0 2% 18%;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-}
-
-.second-section-content-holder {
-    margin-top: 2%;
-}
-
-.second-section .h2-content {
-    /*margin-top: 1%;*/
-}
-
-.second-section .para-content p {
-    margin: 0% 0 0% 0;
-    padding-bottom: 0%;
-}
-
-.jumbotron-home-page {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    background: black;
-    background: url("../../resources/img/white-background-5.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
+/*************************************  Begin Footer **********************************************/
 
 .footer {
     height: 43%;
-    background: #000000;
+    background: #544f4f;
     /*background: -webkit-linear-gradient(to right top, #1A2930 , whitesmoke); !* For Safari 5.1 to 6.0 *!*/
     /*background: -o-linear-gradient(to right top, #1A2930, whitesmoke); !* For Opera 11.1 to 12.0 *!*/
     /*background: -moz-linear-gradient(to right top, #1A2930, whitesmoke); !* For Firefox 3.6 to 15 *!*/
@@ -164,6 +125,61 @@ nav ul li a:hover {
     padding: 0 0 0 10%;
     color: whitesmoke;
 }
+
+/*************************************  End Footer **********************************************/
+
+/*************************************  Begin HomePage **********************************************/
+
+.carousel-home-page {
+    height: 95%;
+    min-width: 100%;
+}
+
+.jumbotron-home-page {
+    height: 100%;
+    margin-bottom: 0 !important;
+    display: flex;
+    align-items: center;
+    background: black;
+    background: url("../../resources/img/section-Two.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.third-section {
+    height: 90%;
+    background-image: url("../../resources/img/white-background-5.jpg");
+    background-right: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.third-section h2 {
+    color: white;
+    background-color: #484444;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    padding: 2% 0 2% 18%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.third-section-content-holder {
+    margin-top: 8%;
+}
+
+.third-section .h2-content {
+    /*margin-top: 1%;*/
+}
+
+.third-section .para-content p {
+    margin: 0% 0 0% 0;
+    padding-bottom: 0%;
+}
+
+/*************************************  End HomePage **********************************************/
+
 
 /*************************************  Begin Gallery **********************************************/
 .section-gallery {
@@ -230,3 +246,6 @@ nav ul li a:hover {
 }
 
 /*************************************  End Gallery **********************************************/
+
+
+/*************************************  Begin Gallery **********************************************/

@@ -14,7 +14,7 @@
             scope: {
                 imageId: '='
             },
-            templateUrl: 'gallery-page/gallery-thumbnail/gallery.thumbnail.html'
+            templateUrl: 'thumbnail-directive/thumbnail.directive.html'
 
         };
     }
