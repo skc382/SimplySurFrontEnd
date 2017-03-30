@@ -11,7 +11,7 @@
         var homeState = {
             name: 'home',
             url: '/home',
-            templateUrl: 'homePage/home.page.html',
+            templateUrl: 'home-page/home.page.html',
             controller: 'HomeController',
             controllerAs: 'homeCtrl'
         };
@@ -19,9 +19,14 @@
         var galleryState = {
             name: 'gallery',
             url: '/gallery',
-            templateUrl: 'galleryPage/gallery.page.html',
+            templateUrl: 'gallery-page/gallery.page.html',
             controller: 'GalleryController',
-            controllerAs: 'galleryCtrl'
+            controllerAs: 'galleryCtrl',
+            resolve: {
+                images: function (ImageService) {
+                    return ImageService.getAllImageThumbnails();
+                }
+            }
         };
 
         $stateProvider

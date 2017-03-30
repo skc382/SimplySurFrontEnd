@@ -1,11 +1,11 @@
-<html ng-app="ui.simply.sur">
+<html>
 <head>
     <title>Simply Sur</title>
     <link href="styles/simply-sur.css" rel="stylesheet">
     <link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../../bower_components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
 </head>
-<body>
+<body ng-app="ui.simply.sur">
 
 <nav class="navbar navbar-fixed-top header">
     <div class="container-fluid ">
@@ -47,7 +47,7 @@
 </section>
 
 <!--Begin Social footer-->
-<footer class="footer container-fluid">
+<footer class="footer container-fluid ng-cloak">
     <div class="row">
         <ul class="list-inline social-footer
                 col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-lg-offset-2">
@@ -78,7 +78,11 @@
 <script src="../../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 <script src="../../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="app.config.js"></script>
-<script src="homePage/home.controller.js"></script>
+<script src="services/image-service/image.service.js"></script>
+<script src="home-page/home.controller.js"></script>
+<script src="gallery-page/gallery.controller.js"></script>
+<script src="gallery-page/gallery-thumbnail/gallery.thumbnail.controller.js"></script>
+<script src="gallery-page/gallery-thumbnail/gallery.thumbnail.directive.js"></script>
 
 </body>
 </html>
