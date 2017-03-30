@@ -205,6 +205,10 @@ nav ul li a:hover {
     cursor: hand;
 }
 
+.modalImage:hover {
+    cursor: not-allowed;
+}
+
 .modalImage .image-wrapper {
     text-align: center;
 }
