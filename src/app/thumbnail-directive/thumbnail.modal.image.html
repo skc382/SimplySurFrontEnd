@@ -1,5 +1,5 @@
 
-<div class="modalImage">
+<div class="modalImage" ng-click="$dismiss()">
     <!--<div class="modal-header">-->
         <!--{{selectedImg.header}}-->
         <!--<button ng-click="$dismiss()" class="close pull-right" aria-hidden="true">&times;</button>-->
@@ -8,7 +8,7 @@
     <!--</div>-->
     <div class="modal-body">
         <div class="image-wrapper">
-            <a ng-href="{{ImageSrc}}" target="_blank">
+            <a ng-href="">
                 <img ng-src={{ImageSrc}}>
             </a>
         </div>

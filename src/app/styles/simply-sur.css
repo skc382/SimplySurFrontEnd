@@ -3,6 +3,37 @@
 
 html, body {
     padding-top: 1.79%;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666666;
+    text-align:left;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    color: #222222;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    letter-spacing: 0px;
+    text-rendering: optimizeLegibility;
+}
+
+h1{
+    font-size: 40px;
+    line-height: 46px;
+}
+
+h2{
+    font-size: 38px;
+    line-height: 46px;
+}
+
+h3{
+    font-size: 30px;
+    line-height: 36px;
 }
 
 p {
@@ -13,16 +44,19 @@ p {
     text-align: justify;
 }
 
-a {
-    font-size: 90%;
-}
-
 ul {
     list-style-type: none;
 }
 
+.bigtext{
+    font-family: Lato,sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 28px;
+}
+
 .content-container {
-    background-color: #e5dde4;
+    background-color: #f5f6f8;
     min-height: 100%;
 }
 
@@ -33,7 +67,7 @@ ul {
 /*************************************  Begin navigation **********************************************/
 
 .header {
-    height: 7%;
+    height: 9%;
     background: white;
     box-shadow: 0 10px 30px rgba(0,0,0,0.12), 0 10px 20px rgba(0,0,0,0.24);
 }
@@ -45,8 +79,13 @@ ul {
 .logo {
     height: 100%;
     width: inherit;
-    background-size: cover;
-    background: url("../../resources/img/RadioHead-Clothify.resized.png") no-repeat center;
+    /*background-size: cover;*/
+    /*background: url("../../resources/img/RadioHead-Clothify.resized.png") no-repeat center;*/
+    padding: 10% 0 0 40%;
+    color: #ff5f3f;
+    font-family: Lato,sans-serif;
+    font-weight: 900;
+    font-size: 32px;
 }
 
 .logo li:hover {
@@ -62,33 +101,50 @@ nav ul li {
     height: inherit;
 }
 
-.menu-content:hover {
-    color: rgba(237, 236, 229, 0.51);
-    background-color: rgba(206, 206, 211, 0.66);
-}
-
 .menu-content {
-    padding: 2% 0 0% 0%;
+    padding: 4% 0 0% 0%;
 }
 
 .menu-seperator {
-    padding: 2% 0 0 0;
-    color: #454045;
+    padding: 4% 0 0 0;
+    color: #666666;
 }
 
 nav ul li a {
-    /*display: block;*/
-    color: #454045;
+    /*color: #666666;*/
     height: 100%;
-    /*width: inherit;*/
     text-align: center;
     text-decoration: none;
 
 }
 
-nav ul li a:hover {
-    color: rgba(218, 33, 3, 0.6);
+/* unvisited link */
+nav ul li a:link {
+    color: red;
     text-decoration: none;
+}
+
+/* visited link */
+nav ul li a:visited {
+    color: #666666;
+    text-decoration: none;
+}
+
+/* mouse over link */
+nav ul li a:hover {
+    color: #e4664d;
+    text-decoration: none;
+}
+
+/* selected link */
+nav ul li a:active {
+    color: #ad4837;
+    text-decoration: none;
+}
+
+.menu-content:hover {
+    color: rgba(237, 236, 229, 0.51);
+    /*background-color: #eeeeee*/
 }
 
 /*************************************  End Navigation **********************************************/
@@ -98,11 +154,25 @@ nav ul li a:hover {
 
 .footer {
     height: 43%;
-    background: #544f4f;
+    background: #0f151a;
     /*background: -webkit-linear-gradient(to right top, #1A2930 , whitesmoke); !* For Safari 5.1 to 6.0 *!*/
     /*background: -o-linear-gradient(to right top, #1A2930, whitesmoke); !* For Opera 11.1 to 12.0 *!*/
     /*background: -moz-linear-gradient(to right top, #1A2930, whitesmoke); !* For Firefox 3.6 to 15 *!*/
     /*background: linear-gradient(to right top, #1A2930, #828081);*/
+}
+
+#footer-vertical-line {
+    margin: 0 0 0 50%;
+    max-width: 1px !important;
+    min-height: 100%;
+    border-left: thin solid #ff5f3f;
+}
+
+#footer-horizontal-line {
+    margin: 0 0 0 7%;
+    max-width: 1px;
+    min-width: 63%;
+    border-bottom: thin solid #ff5f3f;
 }
 
 .social-footer {
@@ -112,18 +182,23 @@ nav ul li a:hover {
 }
 
 .social-footer i {
-    font-size: 460%;
+    font-size: 360%;
     padding-left: 2%;
     height: 10%;
-    color: whitesmoke;
+    color: #bababa;
+}
+
+.social-footer i:hover {
+    color: #e4664d;
 }
 
 .footer-copyright {
     font-size: 150%;
+    text-align: center;
     bottom: 0;
-    margin-top: 2%;
-    padding: 0 0 0 10%;
-    color: whitesmoke;
+    /* margin-top: 2%; */
+    padding: 5% 0 0 15%;
+    color: #bababa;
 }
 
 /*************************************  End Footer **********************************************/
@@ -143,6 +218,7 @@ nav ul li a:hover {
     background: black;
     background: url("../../resources/img/section-Two.jpg");
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
 
 }
@@ -150,6 +226,7 @@ nav ul li a:hover {
 .third-section {
     height: 90%;
     background-image: url("../../resources/img/white-background-5.jpg");
+
     background-right: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -190,7 +267,7 @@ nav ul li a:hover {
 }
 
 .thumbnail-gallery {
-    height: 22%;
+    height: 25%;
     margin-top: 3%;
 }
 
