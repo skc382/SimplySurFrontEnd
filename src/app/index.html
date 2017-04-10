@@ -1,40 +1,42 @@
-<html ng-app="ui.simply.sur">
+<html>
 <head>
     <title>Simply Sur</title>
     <link href="styles/simply-sur.css" rel="stylesheet">
     <link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../../bower_components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
 </head>
-<body>
+<body ng-app="ui.simply.sur">
 
 <nav class="navbar navbar-fixed-top header">
     <div class="container-fluid ">
         <div class="row">
-            <ul class="col-xs-3 col-sm-3 col-md-2 col-lg-2 logo">
-                <li ui-sref="home"><a href="" class=""></a></li>
+            <ul class="col-xs-3 col-sm-3 col-md-2 col-lg-2">
+                <li ui-sref="home"  class="logo">
+                    <span>SimplySur</span>
+                </li>
             </ul>
             <div class="list-inline col-xs-offset-0 col-sm-offset-3 col-md-offset-4 col-lg-offset-6">
                 <ul class="list-inline col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <li class="menu-content">
-                        <a href="" ui-sref="home"  class="current col-xs-12 col-sm-12 col-md-12 col-lg-12"><span>Home</span></a>
+                        <a href="" ui-sref="home"  class="current col-xs-12 col-sm-12 col-md-12 col-lg-12">Home</a>
                     </li>
                     <li class="menu-seperator">
                         <span class="col-xs-1 col-sm-1 col-md-1 col-lg-1">/</span>
                     </li>
                     <li class="menu-content">
-                        <a href="" ui-sref="gallery" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><span>Gallery</span></a>
+                        <a href="" ui-sref="gallery" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Gallery</a>
                     </li>
                     <li class="menu-seperator">
                         <span class="col-xs-1 col-sm-1 col-md-1 col-lg-1">/</span>
                     </li>
                     <li class="menu-content">
-                        <a href="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><span>Calender</span></a>
+                        <a href="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Events</a>
                     </li>
                     <li class="menu-seperator">
                         <span class="col-xs-1 col-sm-1 col-md-1 col-lg-1">/</span>
                     </li>
                     <li class="menu-content">
-                        <a href="about.html" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">About</a>
+                        <a href="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">About</a>
                     </li>
                 </ul>
             </div>
@@ -47,28 +49,39 @@
 </section>
 
 <!--Begin Social footer-->
-<footer class="footer container-fluid">
+<footer class="footer container-fluid ng-cloak">
     <div class="row">
-        <ul class="list-inline social-footer
-                col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-lg-offset-2">
-            <li class="col-xs-1 col-sm-1 col-md-1 col-lg-2">
-                <a href="https://www.facebook.com/PeoplesMusicSchool/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            </li>
-            <li class="col-xs-1 col-sm-1 col-md-1 col-lg-2">
-                <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-            </li>
-            <li class="col-xs-1 col-sm-1 col-md-1 col-lg-2">
-                <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            </li>
-            <li class="col-xs-1 col-sm-1 col-md-1 col-lg-2">
-                <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </li>
-        </ul>
-        <p class="footer-copyright col-xs-3 col-sm-3 col-md-3 col-lg-3
-                col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-lg-offset-4">
-            &copy; Copyright 2017: Music School
-        </p>
+        <div class=" col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-lg-offset-2">
+            <ul class="list-inline social-footer">
+                <li class="col-xs-1 col-sm-1 col-md-1 col-lg-2">
+                    <a href="https://www.facebook.com/PeoplesMusicSchool/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li class="col-xs-1 col-sm-1 col-md-1 col-lg-2">
+                    <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                </li>
+                <li class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    <div id="footer-vertical-line"></div>
+                </li>
+                <li class="col-xs-1 col-sm-1 col-md-1 col-lg-2">
+                    <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li class="col-xs-1 col-sm-1 col-md-1 col-lg-2">
+                    <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <div class="">
+                <div id="footer-horizontal-line"></div>
+            </div>
+        </div>
     </div>
+    <div class="row">
+        <div class="footer-copyright col-xs-3 col-sm-3 col-md-3 col-lg-3
+                col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-lg-offset-4">
+            &copy; Copyright 2017: Simply Sur
+        </div>
+    </div>
+
+
 </footer>
 <!--End Social footer-->
 
@@ -78,7 +91,11 @@
 <script src="../../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 <script src="../../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="app.config.js"></script>
-<script src="homePage/home.controller.js"></script>
+<script src="services/image-service/image.service.js"></script>
+<script src="home-page/home.controller.js"></script>
+<script src="gallery-page/gallery.controller.js"></script>
+<script src="thumbnail-directive/thumbnail.directive.controller.js"></script>
+<script src="thumbnail-directive/thumbnail.directive.js"></script>
 
 </body>
 </html>

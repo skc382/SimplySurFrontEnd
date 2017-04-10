@@ -6,7 +6,7 @@
     function HomeController() {
         var vm = this;
 
-        vm.myInterval = 50000;
+        vm.myInterval = 1;
         vm.noWrapSlides = false;
         vm.active = 0;
         var slides = vm.slides = [];
@@ -25,7 +25,7 @@
         };
 
         function init() {
-            for (var i = 1; i < 4; i++) {
+            for (var i = 1; i < 8; i++) {
                 addSlide(i);
             }
         }
