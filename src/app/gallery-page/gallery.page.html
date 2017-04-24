@@ -1,11 +1,12 @@
-
 <div class="container-fluid content-container">
-   <section class="row well-lg section-gallery col-xs-12 col-sm-10 col-md-10 col-lg-10
+    <section id="orange-header-section" class="row">
+        <h2 class="col-lg-offset-5"><strong>Talent showcase</strong></h2>
+    </section>
+
+    <section class="row well-lg section-gallery col-xs-12 col-sm-10 col-md-10 col-lg-10
                                col-xs-offset-0 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
-
         <div ng-repeat="imgId in galleryCtrl.imageIds track by $index">
-                <gallery-thumbnail image-id="imgId"></gallery-thumbnail>
+            <gallery-thumbnail image-id="imgId"></gallery-thumbnail>
         </div>
-
-   </section>
+    </section>
 </div>
