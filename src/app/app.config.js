@@ -37,18 +37,24 @@
             controllerAs: 'eventsCtrl'
         };
 
-        // var aboutState = {
-        //     name: 'about',
-        //     url: '/events',
-        //     templateUrl: 'events-page/events.page.html',
-        //     controller: 'EventsController',
-        //     controllerAs: 'eventsCtrl'
-        // };
+        var aboutState = {
+            name: 'about',
+            url: '/about',
+            templateUrl: 'about-page/about.page.html',
+            controller: 'AboutController',
+            controllerAs: 'aboutCtrl',
+            resolve: {
+                intro: function (AboutService) {
+                    return AboutService.getIntroduction();
+                }
+            }
+        };
 
         $stateProvider
             .state(homeState)
             .state(galleryState)
-            .state(eventsState);
+            .state(eventsState)
+            .state(aboutState);
 
         $urlRouterProvider.otherwise('/home');
     }
