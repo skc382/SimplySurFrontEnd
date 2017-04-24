@@ -36,24 +36,21 @@ h3{
     line-height: 36px;
 }
 
-p {
+p, .paragraph {
     font-size: 130%;
     line-height: 130%;
     padding: 2% 2% 2% 2%;
     text-indent: 2%;
     text-align: justify;
+    color: #666666;
 }
 
 ul {
     list-style-type: none;
 }
 
-.simply-orange {
-
-}
-
 .bigtext-color {
-    color: #222222;
+    color: #525252;
 }
 
 .bigtext {
@@ -296,6 +293,7 @@ nav ul li a:active {
     background-color: white;
     min-height: 100%;
     margin: 1% 0% 2% 0%;
+    border-radius: 0 !important;
     /*padding: 0 20% 0 20%;*/
 }
 
@@ -374,7 +372,7 @@ nav ul li a:active {
 }
 
 .event-card {
-    border-bottom: 5px solid #ff5f3f;;
+    border-bottom: 2px solid #ff5f3f;
     margin-bottom: 2%;
 }
 
@@ -405,21 +403,21 @@ nav ul li a:active {
 .bigtext-event-date {
     margin: 1% 1% 1% 1%;
     font-family: Lato, serif;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 80px;
     line-height: 28px;
 }
 
 .bigtext-event-month {
     font-family: Lato, serif;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 28px;
     line-height: 28px;
 }
 
-.bigtext-event-title {
+.bigtext-title {
     font-family: Lato, Serif;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 28px;
     line-height: 28px;
 }
@@ -432,7 +430,54 @@ nav ul li a:active {
     line-height: 28px;
 }
 
-
-
-
 /*************************************  End Events **********************************************/
+
+/*************************************  Begin About **********************************************/
+
+.section-about-intro {
+    padding: 2% 0% 2% 0;
+    background-color: white;
+}
+
+.about-image-intro {
+    height: 320px;
+    width: 600px;
+    background-color: #ff5f3f;
+}
+
+.about-contact-header {
+    border-bottom: 2px solid #ff5f3f;
+}
+
+.form-horizontal-about, .aside-about {
+    margin-top: 2%;
+}
+
+.form-control-about {
+    height: 60px !important;
+    border-radius: 0 !important;
+}
+
+.form-control-textarea-about, .btn-about-send {
+    border-radius: 0 !important;
+}
+
+.about-information-markers {
+    font-size: 360%;
+    padding-left: 2%;
+    height: 10%;
+    color: #666666;
+}
+
+.bigtext-aside-header {
+    font-family: Lato, Serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+}
+
+#mail-anchor {
+    color: #ff5f3f;
+}
+
+/*************************************  End About **********************************************/
