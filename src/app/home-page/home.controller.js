@@ -18,14 +18,14 @@
             var newWidth = 600 + slides.length + 1;
             slides.push({
                 image: '../resources/img/'+index+'.jpg',
-                text1: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
-                text2: ['Wow!!','What the hell','Now thats what I call damn!','MMmmm mmMMm'][slides.length % 4],
+                text1: ['Nice image','','Very Cool',''][slides.length % 4],
+                text2: ['Wow!!','','',''][slides.length % 4],
                 id: currIndex++
             });
         };
 
         function init() {
-            for (var i = 1; i < 8; i++) {
+            for (var i = 9; i < 12; i++) {
                 addSlide(i);
             }
         }

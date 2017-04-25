@@ -5,45 +5,51 @@
             <div uib-slide ng-repeat="slide in homeCtrl.slides track by slide.id" index="slide.id">
                 <img class="carousel-home-page" ng-src="{{slide.image}}">
                 <div class="carousel-caption">
-                    <h1>{{slide.text1}}</h1>
-                    <h4>{{slide.text2}}</h4>
+                    <div class="bigtext-carousel-homePage-title">{{slide.text1}}</div>
+                    <!--<span class="bigtext-homePage-description">{{slide.text2}}</span>-->
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="row jumbotron jumbotron-home-page">
+    <section class="row jumbotron-home-page">
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-12
                     col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-lg-offset-2">
-            <h1 class="">Bootstrap Tutorial</h1>
-            <h3>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive,
-                mobile-first projects on the web.</h3>
+            <div class="bigtext-homePage-title col-lg-10 col-lg-offset-2">
+                <span class="col-lg-11 col-lg-offset-1"> Simply Sur - Music school</span></div>
+
+            <div class="bigtext-homePage-description col-lg-10 col-lg-offset-2">
+                <span class="col-lg-12"> Nurture learning, Enrich knowledge and Unleash Creativity </span>
+            </div>
         </div>
     </section>
 
     <section class="row third-section">
         <div class="third-section-content-holder col-xs-12 col-sm-6 col-md-6 col-lg-7
                             col-xs-offset-0 col-sm-offset-3 col-md-offset-4 col-lg-offset-3">
-            <div class="h2-content col-xs-12 col-sm-6 col-md-6 col-lg-9
-                        col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-lg-offset-1">
-                <h2 class="h2-one">Without music, life would be a mistake.</h2>
-                <h2 class="h2-two">None but ourselves can free our minds.</h2>
+            <div class="third-section-header col-lg-7 col-lg-offset-2">
+                <span class="bigtext-homePage-title col-lg-11 col-lg-offset-1">What you can learn</span>
             </div>
-            <div class="para-content col-xs-12 col-sm-6 col-md-6 col-lg-12">
-                <p>
-                    "A person does not hear sound only through the ears;he hears sound through every pore of his body.
-                    It permeates the entire being,
-                    and according to its particular influence either slowsor quickens the rhythm of the blood circulation;it either wakens or soothes the nervous system.
-                    It arouses a person to greater passions
-                    or it calms him by bringing him peace.
-                </p>
-                <p>
-                    According to the sound and its influencea certain effect is produced.
-                    Sound becomes visible in the form of radiance.
-                    This shows that the same energy which goes into the form of soundbefore being visible is absorbed by the physical body.
-                    In that way the physical body recuperatesand becomes charged with new magnetism."
-                </p>
-            </div>
+            <!--<div class="h2-content col-xs-12 col-sm-6 col-md-6 col-lg-9-->
+                        <!--col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-lg-offset-1">-->
+                <!--<h2 class="h2-one">Without music, life would be a mistake.</h2>-->
+                <!--<h2 class="h2-two">None but ourselves can free our minds.</h2>-->
+            <!--</div>-->
+            <!--<div class="para-content col-xs-12 col-sm-6 col-md-6 col-lg-12">-->
+                <!--<p>-->
+                    <!--"A person does not hear sound only through the ears;he hears sound through every pore of his body.-->
+                    <!--It permeates the entire being,-->
+                    <!--and according to its particular influence either slowsor quickens the rhythm of the blood circulation;it either wakens or soothes the nervous system.-->
+                    <!--It arouses a person to greater passions-->
+                    <!--or it calms him by bringing him peace.-->
+                <!--</p>-->
+                <!--<p>-->
+                    <!--According to the sound and its influencea certain effect is produced.-->
+                    <!--Sound becomes visible in the form of radiance.-->
+                    <!--This shows that the same energy which goes into the form of soundbefore being visible is absorbed by the physical body.-->
+                    <!--In that way the physical body recuperatesand becomes charged with new magnetism."-->
+                <!--</p>-->
+            <!--</div>-->
         </div>
     </section>
 </div>
