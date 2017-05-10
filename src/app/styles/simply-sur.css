@@ -133,7 +133,7 @@ nav ul li a {
 
 /* unvisited link */
 nav ul li a:link {
-    color: red;
+    color: #666666;
     text-decoration: none;
 }
 
@@ -150,15 +150,11 @@ nav ul li a:hover {
 }
 
 /* selected link */
-nav ul li a:active {
-    color: #ad4837;
+nav ul li a .active {
+    color: #e4664d;
     text-decoration: none;
 }
 
-.menu-content:hover {
-    color: rgba(237, 236, 229, 0.51);
-    /*background-color: #eeeeee*/
-}
 
 /*************************************  End Navigation **********************************************/
 
@@ -168,10 +164,6 @@ nav ul li a:active {
 .footer {
     height: 43%;
     background: #0f151a;
-    /*background: -webkit-linear-gradient(to right top, #1A2930 , whitesmoke); !* For Safari 5.1 to 6.0 *!*/
-    /*background: -o-linear-gradient(to right top, #1A2930, whitesmoke); !* For Opera 11.1 to 12.0 *!*/
-    /*background: -moz-linear-gradient(to right top, #1A2930, whitesmoke); !* For Firefox 3.6 to 15 *!*/
-    /*background: linear-gradient(to right top, #1A2930, #828081);*/
 }
 
 #footer-vertical-line {
@@ -223,66 +215,82 @@ nav ul li a:active {
     min-width: 100%;
 }
 
+.bigtext-carousel-homePage-title {
+    margin-bottom: 8%;
+    font-family: Lato, serif;
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 28px;
+}
+
 .jumbotron-home-page {
-    height: 100%;
+    height: 30%;
     margin-bottom: 0 !important;
-    display: flex;
-    align-items: center;
-    background: black;
-    background: url("../../resources/img/section-Two.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.jumbotron-home-page-voilin {
-    height: 60%;
-    margin-bottom: 0 !important;
-
-    align-items: center;
     color: white;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background: url("../../resources/img/orange-background.jpg") repeat center;
+    /*background-attachment: fixed;*/
 }
 
-.jumbotron-home-page-voilin-image {
-    min-height: 100%;
-    display: flex;
+.bigtext-homePage-title {
+    margin-bottom: 2%;
+    font-family: Lato, serif;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 28px;
+}
 
-    background: url("../../resources/img/voilin.jpg");
-    background-attachment: fixed;
-    /*background-position: center;*/
-    background-size: cover;
-    background-repeat: no-repeat;
+.bigtext-homePage-description {
+    margin: 0 0 0 3%;
+    font-family: Lato, serif;
+    font-weight: 200;
+    font-size: 36px;
+    line-height: 28px;
 }
 
 .third-section {
-    height: 90%;
-    background-image: url("../../resources/img/white-background-5.jpg");
-    background-right: no-repeat;
-    /*background-attachment: fixed;*/
-    background-size: cover;
-}
+    height: 95%;
+    background-color: white;
 
-.third-section h2 {
-    color: white;
-    background-color: #484444;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-    padding: 2% 0 2% 18%;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+    /*background-image: url("../../resources/img/white-background-5.jpg");*/
+    /*background-right: no-repeat;*/
+    /*background-size: cover;*/
 }
 
 .third-section-content-holder {
-    margin-top: 8%;
+    margin-top: 4%;
 }
 
-.third-section .h2-content {
-    /*margin-top: 1%;*/
+.third-section-header {
+    height: 10%;
+    padding: 2% 0 0 20%;
+    border-left: 3px solid #ff5f3f;
+    border-right: 3px solid #ff5f3f;
 }
 
-.third-section .para-content p {
-    margin: 0% 0 0% 0;
-    padding-bottom: 0%;
+.features-container {
+    margin-top: 3.5%;
+    padding: 2% 20% 2% 20%;
+}
+
+.features-container-inner {
+    padding: 2% 2% 2% 2%;
+}
+
+.feature {
+    height: 35%;
+    width: 80%;
+    border: 3.5px solid black;
+}
+
+.bigtext-feature {
+    margin: 40% 0 0 0%;
+    font-family: Lato, serif;
+    font-weight: 200;
+    font-size: 36px;
+    line-height: 28px;
 }
 
 /*************************************  End HomePage **********************************************/
@@ -434,6 +442,11 @@ nav ul li a:active {
 
 /*************************************  Begin About **********************************************/
 
+
+#mail-anchor {
+    color: #ff5f3f;
+}
+
 .section-about-intro {
     padding: 2% 0% 2% 0;
     background-color: white;
@@ -474,10 +487,6 @@ nav ul li a:active {
     font-weight: 400;
     font-size: 22px;
     line-height: 22px;
-}
-
-#mail-anchor {
-    color: #ff5f3f;
 }
 
 /*************************************  End About **********************************************/
