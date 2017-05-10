@@ -259,6 +259,10 @@ nav ul li a .active {
     /*background-size: cover;*/
 }
 
+.third-section-content-holder {
+    margin-top: 4%;
+}
+
 .third-section-header {
     height: 10%;
     padding: 2% 0 0 20%;
@@ -266,17 +270,27 @@ nav ul li a .active {
     border-right: 3px solid #ff5f3f;
 }
 
-.third-section-content-holder {
-    margin-top: 4%;
+.features-container {
+    margin-top: 3.5%;
+    padding: 2% 20% 2% 20%;
 }
 
-.third-section .h2-content {
-    /*margin-top: 1%;*/
+.features-container-inner {
+    padding: 2% 2% 2% 2%;
 }
 
-.third-section .para-content p {
-    margin: 0% 0 0% 0;
-    padding-bottom: 0%;
+.feature {
+    height: 35%;
+    width: 80%;
+    border: 3.5px solid black;
+}
+
+.bigtext-feature {
+    margin: 40% 0 0 0%;
+    font-family: Lato, serif;
+    font-weight: 200;
+    font-size: 36px;
+    line-height: 28px;
 }
 
 /*************************************  End HomePage **********************************************/
