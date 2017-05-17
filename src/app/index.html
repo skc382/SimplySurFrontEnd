@@ -1,9 +1,13 @@
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Simply Sur</title>
-    <link href="styles/simply-sur.css" rel="stylesheet">
-    <link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../bower_components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="styles/simply-sur.css" rel="stylesheet"
+          th:href="@{/webapp/SimplySurFrontEnd/src/app/styles/simply-sur.css}"/>
+    <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}"/>
+
+    <link rel="stylesheet" href="../../bower_components/components-font-awesome/css/font-awesome.min.css"
+          th:href="@{/webjars/components-font-awesome/4.7.0/css/font-awesome.min.css}" />
 </head>
 <body ng-app="ui.simply.sur">
 
@@ -11,14 +15,14 @@
     <div class="container-fluid ">
         <div class="row">
             <ul class="col-xs-3 col-sm-3 col-md-2 col-lg-2">
-                <li ui-sref="home"  class="logo">
+                <li ui-sref="home" class="logo">
                     <span>SimplySur</span>
                 </li>
             </ul>
             <div class="list-inline col-xs-offset-0 col-sm-offset-3 col-md-offset-4 col-lg-offset-6">
                 <ul class="list-inline col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <li class="menu-content">
-                        <a href="" ui-sref="home"  class="current col-xs-12 col-sm-12 col-md-12 col-lg-12">Home</a>
+                        <a href="" ui-sref="home" class="current col-xs-12 col-sm-12 col-md-12 col-lg-12">Home</a>
                     </li>
                     <li class="menu-seperator">
                         <span class="col-xs-1 col-sm-1 col-md-1 col-lg-1">/</span>
@@ -60,19 +64,23 @@
         <div class=" col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-lg-offset-2">
             <ul class="list-inline social-footer">
                 <li class="col-xs-1 col-sm-1 col-md-1 col-lg-2">
-                    <a href="https://www.facebook.com/PeoplesMusicSchool/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/PeoplesMusicSchool/" target="_blank"><i class="fa fa-facebook"
+                                                                                              aria-hidden="true"></i></a>
                 </li>
                 <li class="col-xs-1 col-sm-1 col-md-1 col-lg-2">
-                    <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"
+                                                                          aria-hidden="true"></i></a>
                 </li>
                 <li class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                     <div id="footer-vertical-line"></div>
                 </li>
                 <li class="col-xs-1 col-sm-1 col-md-1 col-lg-2">
-                    <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"
+                                                                              aria-hidden="true"></i></a>
                 </li>
                 <li class="col-xs-1 col-sm-1 col-md-1 col-lg-2">
-                    <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-instagram"
+                                                                                  aria-hidden="true"></i></a>
                 </li>
             </ul>
             <div class="">
@@ -91,22 +99,54 @@
 </footer>
 <!--End Social footer-->
 
-<script src="../../bower_components/angular/angular.min.js"></script>
-<script src="../../bower_components/angular-animate/angular-animate.min.js"></script>
-<script src="../../bower_components/angular-sanitize/angular-sanitize.min.js"></script>
-<script src="../../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-<script src="../../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-<script src="app.config.js"></script>
-<script src="services/image.service.js"></script>
-<script src="services/about-service.js"></script>
-<script src="home-page/home.controller.js"></script>
-<script src="gallery-page/gallery.controller.js"></script>
-<script src="thumbnail-directive/thumbnail.directive.controller.js"></script>
-<script src="thumbnail-directive/thumbnail.directive.js"></script>
-<script src="events-page/events.controller.js"></script>
-<script src="event-card-directive/event.card.directive.controller.js"></script>
-<script src="event-card-directive/event.card.directive.js"></script>
-<script src="about-page/about.controller.js"></script>
+<script src="../../bower_components/angular/angular.min.js"
+        th:src="@{/webjars/angular/1.6.1/angular.min.js}"></script>
+
+<script src="../../bower_components/angular-animate/angular-animate.min.js"
+        th:src="@{/webjars/angular-animate/1.6.1/angular-animate.min.js}"></script>
+
+<script src="../../bower_components/angular-sanitize/angular-sanitize.min.js"
+        th:src="@{/webjars/angular-sanitize/1.6.1/angular-sanitize.min.js}"></script>
+
+<script src="../../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"
+        th:src="@{/webjars/angular-bootstrap/2.5.0/ui-bootstrap-tpls.min.js}"></script>
+
+<script src="../../bower_components/angular-ui-router/release/angular-ui-router.min.js"
+        th:src="@{/webjars/angular-ui-router/0.4.2/release/angular-ui-router.min.js}"></script>
+
+
+<script src="app.config.js"
+        th:src="@{/webapp/SimplySurFrontEnd/src/app/app.config.js}"></script>
+
+<script src="services/image.service.js"
+        th:src="@{/webapp/SimplySurFrontEnd/src/app/services/image.service.js}"></script>
+
+<script src="services/about-service.js"
+        th:src="@{/webapp/SimplySurFrontEnd/src/app/services/about-service.js}"></script>
+
+<script src="home-page/home.controller.js"
+        th:src="@{/webapp/SimplySurFrontEnd/src/app/home-page/home.controller.js}"></script>
+
+<script src="gallery-page/gallery.controller.js"
+        th:src="@{/webapp/SimplySurFrontEnd/src/app/gallery-page/gallery.controller.js}"></script>
+
+<script src="thumbnail-directive/thumbnail.directive.controller.js"
+        th:src="@{/webapp/SimplySurFrontEnd/src/app/thumbnail-directive/thumbnail.directive.controller.js}"></script>
+
+<script src="thumbnail-directive/thumbnail.directive.js"
+        th:src="@{/webapp/SimplySurFrontEnd/src/app/thumbnail-directive/thumbnail.directive.js}"></script>
+
+<script src="events-page/events.controller.js"
+        th:src="@{/webapp/SimplySurFrontEnd/src/app/events-page/events.controller.js}"></script>
+
+<script src="event-card-directive/event.card.directive.controller.js"
+        th:src="@{/webapp/SimplySurFrontEnd/src/app/event-card-directive/event.card.directive.controller.js}"></script>
+
+<script src="event-card-directive/event.card.directive.js"
+        th:src="@{/webapp/SimplySurFrontEnd/src/app/event-card-directive/event.card.directive.js}"></script>
+
+<script src="about-page/about.controller.js"
+        th:src="@{/webapp/SimplySurFrontEnd/src/app/about-page/about.controller.js}"></script>
 
 </body>
 </html>
