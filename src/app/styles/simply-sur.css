@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
-
 html, body {
     padding-top: 1.79%;
     font-family: Lato, sans-serif;
     font-weight: 300;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 16px;
     color: #666666;
     text-align:left;
 }
@@ -26,9 +25,10 @@ h1{
     line-height: 46px;
 }
 
-h2{
-    font-size: 38px;
-    line-height: 46px;
+.h2{
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.5rem;
 }
 
 h3{
@@ -73,6 +73,14 @@ ul {
     background: url("../../resources/img/orange-background.jpg") repeat-x center;
 }
 
+.orange-header {
+    padding-top: 1.9%;
+    font-family: Lato,sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.5rem;
+}
+
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
     display: none !important;
 }
@@ -80,7 +88,7 @@ ul {
 /*************************************  Begin navigation **********************************************/
 
 .header {
-    height: 9%;
+    height: 8%;
     background: white;
     box-shadow: 0 2px 2px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.24);
 }
@@ -98,7 +106,7 @@ ul {
     color: #ff5f3f;
     font-family: Lato,sans-serif;
     font-weight: 900;
-    font-size: 32px;
+    font-size: 2.5rem;
 }
 
 .logo li:hover {
@@ -110,7 +118,9 @@ nav ul {
 }
 
 nav ul li {
-    font-size: 150%;
+    font-family: Lato,sans-serif;
+    font-size: 1.65rem;
+    font-weight: 500;
     height: inherit;
 }
 
@@ -187,7 +197,7 @@ nav ul li a .active {
 }
 
 .social-footer i {
-    font-size: 360%;
+    font-size: 3.25rem;
     padding-left: 2%;
     height: 10%;
     color: #bababa;
@@ -198,6 +208,7 @@ nav ul li a .active {
 }
 
 .footer-copyright {
+    font-family: Lato,sans-serif;
     font-size: 150%;
     text-align: center;
     bottom: 0;
@@ -219,8 +230,8 @@ nav ul li a .active {
     margin-bottom: 8%;
     font-family: Lato, serif;
     font-weight: 500;
-    font-size: 100px;
-    line-height: 28px;
+    font-size: 4.5rem;
+    line-height: 2rem;
 }
 
 .jumbotron-home-page {
@@ -237,22 +248,22 @@ nav ul li a .active {
 .bigtext-homePage-title {
     margin-bottom: 2%;
     font-family: Lato, serif;
-    font-weight: 500;
-    font-size: 60px;
-    line-height: 28px;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.5rem;
 }
 
 .bigtext-homePage-description {
-    margin: 0 0 0 3%;
+    padding: 0 0 0 0 !important;
     font-family: Lato, serif;
     font-weight: 200;
-    font-size: 36px;
-    line-height: 28px;
+    font-size: 3rem;
+    line-height: 1.5rem;
 }
 
 .third-section {
-    height: 95%;
-    background-color: white;
+    height: 80%;
+    background-color: transparent;
 
     /*background-image: url("../../resources/img/white-background-5.jpg");*/
     /*background-right: no-repeat;*/
@@ -266,8 +277,8 @@ nav ul li a .active {
 .third-section-header {
     height: 10%;
     padding: 2% 0 0 20%;
-    border-left: 3px solid #ff5f3f;
-    border-right: 3px solid #ff5f3f;
+    /*border-left: 3px solid #ff5f3f;*/
+    /*border-right: 3px solid #ff5f3f;*/
 }
 
 .features-container {
@@ -280,29 +291,56 @@ nav ul li a .active {
 }
 
 .feature {
-    height: 35%;
+    height: 40%;
     width: 80%;
-    border: 3.5px solid black;
+    border: 3px solid #ff5f3f;
 }
 
 .bigtext-feature {
-    margin: 40% 0 0 0%;
+    height: 100%;
+    width: 100%;
+    padding-top: 10%;
+    color: white;
+    background-color: #0f151a;
+    opacity: 0;
+    transition: all ease 0.8s;
     font-family: Lato, serif;
     font-weight: 200;
-    font-size: 36px;
-    line-height: 28px;
+    font-size: 1.8em;
+    line-height: 8em;
 }
+
+.bigtext-feature:hover {
+    opacity: 0.8;
+    cursor: hand;
+}
+
+.feature-hindustani {
+    background: url("../../resources/img/Tanpura.jpg") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.feature-karoake {
+    background: url("../../resources/img/Mic.jpg") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.feature-harmonium {
+    background: url("../../resources/img/Harmonium.jpg") no-repeat center;
+    background-size: 100% 100%;
+}
+
 
 /*************************************  End HomePage **********************************************/
 
 
 /*************************************  Begin Gallery **********************************************/
-.section-gallery, .section-event  {
+.section-gallery  {
     background-color: white;
-    min-height: 100%;
+    max-height: 90%;
     margin: 1% 0% 2% 0%;
     border-radius: 0 !important;
-    /*padding: 0 20% 0 20%;*/
+    overflow-y: scroll;
 }
 
 .thumbnail-gallery {
@@ -360,6 +398,10 @@ nav ul li a .active {
 }
 
 @media screen and (min-width: 750px) {
+    .modal-dialog {
+        margin: 5% 25% 0 15% !important;
+    }
+
     .modal-content {
         min-width: 360px !important;
     }
@@ -370,6 +412,15 @@ nav ul li a .active {
 
 
 /*************************************  Begin Events **********************************************/
+
+.section-event  {
+    background-color: white;
+    max-height: 75%;
+    margin: 1% 0% 2% 0%;
+    border-radius: 0 !important;
+    overflow-y: scroll;
+    /*padding: 0 20% 0 20%;*/
+}
 
 .event-indicator {
     font-family: Lato, serif;
