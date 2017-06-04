@@ -1,6 +1,8 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Simply Sur</title>
+    <title>SimplySur</title>
+    <link href="../resources/img/simplysur_logo_2.ico" rel="shortcut icon" type="image/x-icon"
+          th:href="@{/webapp/SimplySurFrontEnd/src/resources/img/simplysur_logo_2.ico}"/>
     <link href="styles/simply-sur.css" rel="stylesheet"
           th:href="@{/webapp/SimplySurFrontEnd/src/app/styles/simply-sur.css}"/>
     <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css"
@@ -14,12 +16,15 @@
 <nav class="navbar navbar-fixed-top header">
     <div class="container-fluid ">
         <div class="row">
-            <ul class="col-xs-3 col-sm-3 col-md-2 col-lg-2">
-                <li ui-sref="home" class="logo">
+            <ul class="col-xs-2">
+                <li class="logo col-xs-3">
+                    <img src="../resources/img/SimplySur_Logos-1.png" class="logo-icon">
+                </li>
+                <li ui-sref="home" class="logo col-xs-9">
                     <span>SimplySur</span>
                 </li>
             </ul>
-            <div class="list-inline col-xs-offset-0 col-sm-offset-3 col-md-offset-4 col-lg-offset-6">
+            <div class="list-inline col-xs-offset-6">
                 <ul class="list-inline col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <li class="menu-content">
                         <a href="" ui-sref="home" class="current col-xs-12 col-sm-12 col-md-12 col-lg-12">Home</a>
@@ -29,6 +34,12 @@
                     </li>
                     <li class="menu-content">
                         <a href="" ui-sref="portfolio" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Portfolio</a>
+                    </li>
+                    <li class="menu-seperator">
+                        <span class="col-xs-1 col-sm-1 col-md-1 col-lg-1">/</span>
+                    </li>
+                    <li class="menu-content">
+                        <a href="" ui-sref="portfolio" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Classes</a>
                     </li>
                     <li class="menu-seperator">
                         <span class="col-xs-1 col-sm-1 col-md-1 col-lg-1">/</span>
@@ -46,7 +57,7 @@
                         <span class="col-xs-1 col-sm-1 col-md-1 col-lg-1">/</span>
                     </li>
                     <li class="menu-content">
-                        <a href="" ui-sref="about" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">About</a>
+                        <a href="" ui-sref="about" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Contact Us</a>
                     </li>
                 </ul>
             </div>
