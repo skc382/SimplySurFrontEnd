@@ -50,11 +50,20 @@
             }
         };
 
+        var classesState = {
+            name: 'classes',
+            url: '/classes',
+            templateUrl: 'classes-page/classes.page.html',
+            controller: 'ClassesController',
+            controllerAs: 'classesCtrl'
+        };
+
         $stateProvider
             .state(homeState)
             .state(galleryState)
             .state(eventsState)
-            .state(aboutState);
+            .state(aboutState)
+            .state(classesState);
 
         $urlRouterProvider.otherwise('/home');
     }
