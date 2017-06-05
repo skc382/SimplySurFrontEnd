@@ -495,6 +495,12 @@ nav ul li a .active {
 
 /*************************************  Begin Contact Us **********************************************/
 
+
+.content-container-contact-us {
+    background-color: #f5f6f8;
+    min-height: 70%;
+}
+
 #mail-anchor {
     color: #ff5f3f;
 }
