@@ -379,35 +379,36 @@ nav ul li a .active {
     margin-top: 10px;
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
 
     .modal-dialog {
-        margin: 5% 25% 0 15% !important;
+        margin: 5% 80% 0 15% !important;
     }
 
     .modal-content {
         min-width: 1200px !important;
-        width: 1400px !important;
+        width: 1200px !important;
     }
 }
 
 @media screen and (min-width: 970px) {
     .modal-dialog {
-        margin: 5% 25% 0 15% !important;
+        margin: 5% 80% 0 15% !important;
     }
 
     .modal-content {
-        min-width: 800px !important;
+        /*min-width: 800px !important;*/
+        width: 1080px !important;
     }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 500px) {
     .modal-dialog {
         margin: 5% 25% 0 15% !important;
     }
 
     .modal-content {
-        min-width: 360px !important;
+        width: 900px !important;
     }
 }
 
