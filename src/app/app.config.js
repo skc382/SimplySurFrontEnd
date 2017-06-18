@@ -4,9 +4,9 @@
     angular.module('ui.simply.sur', ['ngAnimate', 'ngSanitize', 'ui.bootstrap', 'ui.router'])
         .config(SimplySurConfig);
 
-    SimplySurConfig.$inject=['$stateProvider', '$urlRouterProvider'];
+    SimplySurConfig.$inject=['$stateProvider', '$urlRouterProvider', '$uiViewScrollProvider'];
 
-    function SimplySurConfig($stateProvider, $urlRouterProvider) {
+    function SimplySurConfig($stateProvider, $urlRouterProvider, $uiViewScrollProvider) {
 
         var homeState = {
             name: 'home',
@@ -74,6 +74,8 @@
             .state(aboutState)
             .state(classesState)
             .state(portfolioState);
+
+        $uiViewScrollProvider.useAnchorScroll();
 
         $urlRouterProvider.otherwise('/home');
     }

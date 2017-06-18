@@ -14,7 +14,7 @@
 
         vm.openModalImage = function (imageSrc, imageDescription) {
             $uibModal.open({
-                size: 'lg',
+                size: 'md',
                 templateUrl: "thumbnail-directive/thumbnail.modal.image.html",
                 resolve: {
                     imageSrcToUse: function () {
