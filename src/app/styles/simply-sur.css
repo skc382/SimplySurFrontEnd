@@ -76,8 +76,8 @@ ul {
 .orange-header {
     padding-top: 1.9%;
     font-family: Lato, sans-serif;
-    font-weight: 700;
-    font-size: 4rem;
+    font-weight: 600;
+    font-size: 3rem;
     line-height: 1.5rem;
 }
 
@@ -583,3 +583,14 @@ nav ul li a .active {
 }
 
 /*************************************  End Classes **********************************************/
+
+.content-container-portfolio {
+    background-color: #f5f6f8;
+    min-height: 50%;
+}
+
+.section-classes-portfolio {
+    min-height: inherit;
+    padding: 4% 0% 2% 0;
+    background-color: white;
+}
