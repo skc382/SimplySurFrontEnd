@@ -58,12 +58,22 @@
             controllerAs: 'classesCtrl'
         };
 
+        var portfolioState = {
+            name: 'portfolio',
+            url: '/portfolio',
+            templateUrl: 'portfolio-page/portfolio.page.html',
+            controller: 'PortfolioController',
+            controllerAs: 'portfolioCtrl'
+        };
+
+
         $stateProvider
             .state(homeState)
             .state(galleryState)
             .state(eventsState)
             .state(aboutState)
-            .state(classesState);
+            .state(classesState)
+            .state(portfolioState);
 
         $urlRouterProvider.otherwise('/home');
     }
