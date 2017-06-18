@@ -8,7 +8,7 @@
     function HomeController($window, $state) {
         var vm = this;
 
-        vm.myInterval = 1;
+        vm.myInterval = 4000;
         vm.noWrapSlides = false;
         vm.active = 0;
         var slides = vm.slides = [];
@@ -20,7 +20,7 @@
             var newWidth = 600 + slides.length + 1;
             slides.push({
                 image: getBasePath() + index + '.jpg',
-                text1: ['Nice image', '', 'Very Cool', ''][slides.length % 4],
+                text1: ['Welcome to Simply Sur', 'Where the light shines bright', 'The light of music'][slides.length % 3],
                 text2: ['Wow!!', '', '', ''][slides.length % 4],
                 id: currIndex++
             });
