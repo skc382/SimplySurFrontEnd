@@ -162,13 +162,13 @@ nav ul li a:visited {
 /* mouse over link */
 nav ul li a:hover {
     color: #e4664d;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 /* selected link */
-nav ul li a .active {
-    color: #e4664d;
-    text-decoration: none;
+nav ul li a:active {
+    color: #e4664d ;
+    text-decoration: underline;
 }
 
 /*************************************  End Navigation **********************************************/
@@ -255,6 +255,14 @@ nav ul li a .active {
     font-weight: 700;
     font-size: 4rem;
     line-height: 1.5rem;
+}
+
+.bigtext-homePage-title span {
+    margin-left: 13%
+}
+
+.bigtext-homePage-description span {
+    margin-left: 17%
 }
 
 .bigtext-homePage-description {
@@ -371,7 +379,7 @@ nav ul li a .active {
 
 .modalImage .image-wrapper img {
     width: 100%;
-    height: 70%;
+    height: 95%;
 }
 
 .modalImage .image-description {
@@ -382,33 +390,38 @@ nav ul li a .active {
 @media screen and (min-width: 1200px) {
 
     .modal-dialog {
-        margin: 5% 80% 0 15% !important;
+        margin: 1% 1% 1% 1% !important;
     }
 
     .modal-content {
-        min-width: 1200px !important;
-        width: 1200px !important;
+        /*max-width: 1600px !important;*/
+        /*width: 1600px !important;*/
+        width: 98vw;
+        height: 90vw;
     }
 }
 
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 992px) {
     .modal-dialog {
-        margin: 5% 80% 0 15% !important;
+        margin: 1% 1% 1% 1% !important;
     }
 
     .modal-content {
-        /*min-width: 800px !important;*/
-        width: 1080px !important;
+        /*max-width: 1080px !important;*/
+        /*width: 1080px !important;*/
+        width: 98vw;
+        height: 90vw;
     }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 768px) {
     .modal-dialog {
-        margin: 5% 25% 0 15% !important;
+        margin: 1% 1% 1% 1% !important;
     }
 
     .modal-content {
-        width: 900px !important;
+        width: 98vw;
+        height: 90vw;
     }
 }
 
@@ -584,6 +597,10 @@ nav ul li a .active {
 }
 
 /*************************************  End Classes **********************************************/
+
+.orange-header-portfolio {
+    margin-left: 45%;
+}
 
 .content-container-portfolio {
     background-color: #f5f6f8;

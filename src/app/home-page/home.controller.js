@@ -39,7 +39,7 @@
                 $state.reload();
             });
 
-            for (var i = 101; i <=103; i++) {
+            for (var i = 103; i >=101; i--) {
                 addSlide(i);
             }
         }
