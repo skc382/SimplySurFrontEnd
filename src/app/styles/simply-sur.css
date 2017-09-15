@@ -230,6 +230,10 @@ nav ul li a:active {
     min-width: 100%;
 }
 
+.carousel-home-page:hover {
+    cursor: hand;
+}
+
 .bigtext-carousel-homePage-title {
     margin-bottom: 40%;
     font-family: Lato, serif;
@@ -425,6 +429,14 @@ nav ul li a:active {
     }
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+    .img {
+        width:55%;
+        min-width:220px;
+    }
+}
+
 /*************************************  End Gallery **********************************************/
 
 /*************************************  Begin Events **********************************************/
@@ -579,6 +591,19 @@ nav ul li a:active {
     background-color: transparent;
 }
 
+.profile-feature-name {
+    height: 250px;
+    width: 350px;
+    color: white;
+    background-color: #ff5f3f;
+    padding: 0 0 0 0;
+    text-align: center;
+    font-family: Lato, Serif;
+    font-weight: 400;
+    font-size: 5em;
+    line-height: 1em;
+}
+
 .classes-feature-name {
     height: 220px;
     width: 300px;
@@ -609,6 +634,6 @@ nav ul li a:active {
 
 .section-classes-portfolio {
     min-height: inherit;
-    padding: 4% 0% 2% 0;
+    padding: 4% 0% 0% 2%;
     background-color: white;
 }
