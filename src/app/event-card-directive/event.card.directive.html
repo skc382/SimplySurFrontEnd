@@ -12,14 +12,14 @@
             </div>
         </div>
         <div class="event-description-container col-lg-10">
-            <div class="event-title col-lg-12">
-                <span class="bigtext-title bigtext-color" ng-bind="eventCardController.event.details.title"></span>
+            <div class="col-lg-12">
+                <span class="bigtext-title bigtext-color" ng-bind-html="eventCardController.event.details.title"></span>
             </div>
             <div class="event-description col-lg-12">
-                <p class="bigtext-color" ng-bind="eventCardController.event.details.description"></p>
+                <p class="bigtext-color" ng-bind-html="eventCardController.event.details.description"></p>
             </div>
             <div class="col-lg-4">
-                <span class="col-lg-6 bigtext-event-time bigtext-color"><strong>Time: </strong>{{eventCardController.event.time}}</span>
+                <span class="col-lg-6 bigtext-event-time bigtext-color"><strong><u>Time</u>: </strong>{{eventCardController.event.time}}</span>
             </div>
         </div>
     </div>

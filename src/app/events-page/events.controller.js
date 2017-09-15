@@ -9,21 +9,33 @@
         vm.events =[
             {
                 'date': {
-                    'day': 23,
-                    'month': 'May',
-                    'Year': 2016,
+                    'day': 14,
+                    'month': 'Oct',
+                    'Year': 2017,
 
                 },
-                'time': '07:30 am',
+                'time': '4 to 10 pm',
                 'details': {
-                    'title': 'Ram Leela',
-                    'description': 'A wide variaety of food will be available for the guests to indulge in. Our School children will preform '
-                    +'various styles of dance and singing. A prize will be given out for the winner. ' +
-                    'various styles of dance and singing. A prize will be given out for the winner' +
-                    'various styles of dance and singing. A prize will be given out for the winner' +
-                    'various styles of dance and singing. A prize will be given out for the winner' +
-                    'various styles of dance and singing. A prize will be given out for the winner' +
-                    'various styles of dance and singing. A prize will be given out for the winner'
+                    'title': '<b><u>Ramlila</u></b>',
+                    'description':'<a href="https://tinyurl.com/Ramlila2017" target="_blank id="mail-anchor"><b> Buy Tickets Now! </b></a> <br><br>' +
+                    'Ramlila is an annual event organised by Simply Sur. <br>' +
+                    'This event is re-enactment of the life of <b>Rama</b> according to the ancient Hindu epic <b>Ramayan</b>. <br>' +
+                    'The epic recites his childhood along with those of others who are major characters in it, such as Sita, Lakshmana, Ravana and others. ' +
+                    'It includes chapters on the marriage of Sita and Rama, the exile of Rama, abduction of Sita by Ravan and the war between Ram and his ' +
+                    'army against Ravan and the return of Rama to his homeland.' +
+                    '<br><br> <b>SimplySur</b> along with <b>ESHA</b> proudly sponsors and presents this event every year ' +
+                    'in <i>Marlboro</i> close to the time of Dussehra and Diwali. This year it is happening on Oct 14th. <br><br>' +
+                    '<b><u>Sponsors</u></b> : <br>' +
+                    'Anaita Tarapore (K/W),<br>' +
+                    ' New York Life Insurance, <br>' +
+                    'USA TV NEWS,<br>' +
+                    'TV Asia,<br>' +
+                    'JEI Learning,<br>' +
+                    'Takajum Dance School,<br>' +
+                    'TV America,<br>' +
+                    'NRIWALA,<br>' +
+                    'Design for one,<br>' +
+                    'Sanskruti Dance School and Art of Living.'
                 }
             }
         ];
