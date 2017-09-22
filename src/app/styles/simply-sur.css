@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 html, body {
-    padding-top: 1.79%;
+    /*padding-top: 1.79%;*/
     font-family: Lato, sans-serif;
     font-weight: 300;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 1rem;
+    line-height: 1rem;
     color: #666666;
     text-align: left;
 }
@@ -14,15 +14,15 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Lato, sans-serif;
     font-weight: 400;
     color: #222222;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 0.625rem;
+    margin-top: 0.625rem;
     letter-spacing: 0px;
     text-rendering: optimizeLegibility;
 }
 
 h1 {
-    font-size: 40px;
-    line-height: 46px;
+    font-size: 2.5rem;
+    line-height: 2.875rem;
 }
 
 .h2 {
@@ -32,8 +32,8 @@ h1 {
 }
 
 h3 {
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
 }
 
 p, .paragraph {
@@ -87,31 +87,46 @@ ul {
 
 /*************************************  Begin navigation **********************************************/
 
+div.navbar-collapse.collapse {
+    display: block;
+    overflow: hidden;
+    max-height: 0px;
+    -webkit-transition: max-height .3s ease;
+    -moz-transition: max-height .3s ease;
+    -o-transition: max-height .3s ease;
+    transition: max-height .3s ease;
+}
+
+div.navbar-collapse.collapse.in {
+    max-height: 2000px;
+}
+
 .header {
-    height: 8%;
-    background: white;
+    /*top: -4rem;*/
+    margin-bottom: 0% !important;
+    background: white !important;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24);
 }
 
 .header ul {
-    height: 100%;
+    /*height: 100%;*/
 }
 
 .logo-icon {
-    width: 50px;
-    height: 50px;
+    width: 5rem;
+    height: 5rem;
 }
 
 .logo {
-    height: 100%;
-    width: inherit;
+    /*height: 100%;*/
+    /*width: inherit;*/
     /*background-size: cover;*/
     /*background: url("../../resources/img/RadioHead-Clothify.resized.png") no-repeat center;*/
-    padding: 7% 0 0 40%;
+    /*padding: 7% 0 0 40%;*/
     color: #ff5f3f;
     font-family: Lato, sans-serif;
     font-weight: 900;
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-weight: 5rem;
 }
 
@@ -119,11 +134,11 @@ ul {
     cursor: hand;
 }
 
-nav ul {
+nav div ul {
     height: inherit;
 }
 
-nav ul li {
+.menu-content {
     font-family: Lato, sans-serif;
     font-size: 1.65rem;
     font-weight: 500;
@@ -131,43 +146,42 @@ nav ul li {
 }
 
 .menu-content {
-    padding: 4% 0 0% 0%;
+    /*padding: 4% 0 0% 0%;*/
 }
 
 .menu-seperator {
-    padding: 4% 0 0 0;
+    /*padding: 4% 0 0 0;*/
     color: #666666;
 }
 
-nav ul li a {
+.menu-content a {
     /*color: #666666;*/
-    height: 100%;
     text-align: center;
     text-decoration: none;
 
 }
 
 /* unvisited link */
-nav ul li a:link {
+.menu-content a:link {
     color: #666666;
     text-decoration: none;
 }
 
 /* visited link */
-nav ul li a:visited {
+.menu-content a:visited {
     color: #666666;
     text-decoration: none;
 }
 
 /* mouse over link */
-nav ul li a:hover {
+.menu-content a:hover {
     color: #e4664d;
     text-decoration: underline;
 }
 
 /* selected link */
-nav ul li a:active {
-    color: #e4664d ;
+.menu-content a:active {
+    color: #e4664d;
     text-decoration: underline;
 }
 
@@ -213,7 +227,7 @@ nav ul li a:active {
 
 .footer-copyright {
     font-family: Lato, sans-serif;
-    font-size: 150%;
+    font-size: 1.25rem;
     text-align: center;
     bottom: 0;
     /* margin-top: 2%; */
@@ -391,52 +405,6 @@ nav ul li a:active {
     margin-top: 10px;
 }
 
-@media screen and (min-width: 1200px) {
-
-    .modal-dialog {
-        margin: 1% 1% 1% 1% !important;
-    }
-
-    .modal-content {
-        /*max-width: 1600px !important;*/
-        /*width: 1600px !important;*/
-        width: 98vw;
-        height: 90vw;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .modal-dialog {
-        margin: 1% 1% 1% 1% !important;
-    }
-
-    .modal-content {
-        /*max-width: 1080px !important;*/
-        /*width: 1080px !important;*/
-        width: 98vw;
-        height: 90vw;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .modal-dialog {
-        margin: 1% 1% 1% 1% !important;
-    }
-
-    .modal-content {
-        width: 98vw;
-        height: 90vw;
-    }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-
-    .img {
-        width:55%;
-        min-width:220px;
-    }
-}
-
 /*************************************  End Gallery **********************************************/
 
 /*************************************  Begin Events **********************************************/
@@ -520,7 +488,6 @@ nav ul li a:active {
 /*************************************  End Events **********************************************/
 
 /*************************************  Begin Contact Us **********************************************/
-
 
 .content-container-contact-us {
     background-color: #f5f6f8;
@@ -637,3 +604,93 @@ nav ul li a:active {
     padding: 4% 0% 0% 2%;
     background-color: white;
 }
+
+/************************************* Begin Media Queries **********************************************/
+
+@media only screen and (min-width: 320px) {
+    .img {
+        width: 55%;
+        min-width: 220px;
+    }
+
+    /*** Footer ***/
+    #footer-vertical-line, #footer-horizontal-line {
+        display: none;
+    }
+
+    .social-footer {
+        height: 50%;
+    }
+
+    .social-footer i {
+        height: 32%;
+    }
+
+    /*** Footer ***/
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+    .img {
+        width: 55%;
+        min-width: 220px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+    .modal-dialog {
+        margin: 1% 1% 1% 1% !important;
+    }
+
+    .modal-content {
+        width: 98vw;
+        height: 90vw;
+    }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+    .modal-dialog {
+        margin: 1% 1% 1% 1% !important;
+    }
+
+    .modal-content {
+        width: 98vw;
+        height: 90vw;
+    }
+
+    /*** Footer ***/
+    #footer-vertical-line, #footer-horizontal-line {
+        display: block;
+    }
+
+    .social-footer {
+        height: 18%;
+    }
+
+    .social-footer i {
+        height: 10%;
+    }
+
+    /*** Footer ***/
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+
+    .modal-dialog {
+        margin: 1% 1% 1% 1% !important;
+    }
+
+    .modal-content {
+        width: 98vw;
+        height: 90vw;
+    }
+
+}
+
+/************************************* End Media Queries **********************************************/
