@@ -28,9 +28,13 @@
 
 
         function getBasePath() {
-            if ($window.innerWidth < 500) {
+            if ($window.innerWidth < 728) {
+                if($window.innerWidth < 500) {
+                    return '../resources/img/lessthan300/';
+                }
                 return '../resources/img/lessthan500/';
             }
+
             return '../resources/img/';
         }
 
