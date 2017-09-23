@@ -360,7 +360,7 @@ nav div ul {
 }
 
 .thumbnail-gallery {
-    height: 25%;
+    /*height: 25%;*/
     margin-top: 3%;
 }
 
@@ -381,11 +381,6 @@ nav div ul {
 
 .modalImage .image-wrapper {
     text-align: center;
-}
-
-.modalImage .image-wrapper img {
-    width: 100%;
-    height: 95%;
 }
 
 .modalImage .image-description {
@@ -565,20 +560,12 @@ nav div ul {
         color: #666666;
     }
 
-    /*** Start Footer ***/
-    #footer-vertical-line, #footer-horizontal-line {
-        display: none;
+    .bigtext-title {
+        font-family: Lato, Serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
-
-    .social-footer {
-        height: 50%;
-    }
-
-    .social-footer i {
-        height: 32%;
-    }
-
-    /*** End Footer ***/
 
     /*** porfolio page ***/
     .orange-header-portfolio {
@@ -603,12 +590,25 @@ nav div ul {
 
     /*** porfolio page ***/
 
-    .bigtext-title {
-        font-family: Lato, Serif;
-        font-weight: 400;
-        font-size: 1.5rem;
-        line-height: 2rem;
+    /*** Start gallery page ***/
+
+    .modal-dialog {
+        margin: 1% 1% 1% 1% !important;
     }
+
+    .modal-content {
+        width: 98vw;
+        height: 50vh;
+    }
+
+    .modalImage .image-wrapper img {
+        width: 100%;
+        height: 75%;
+    }
+
+    /*** End gallery page ***/
+
+    /*** Start Events page ***/
 
     .bigtext-event-date {
         margin: 1% 1% 1% 1%;
@@ -656,18 +656,72 @@ nav div ul {
         text-align: center;
         /*border: 1px solid #222222;*/
     }
+    /*** End Events page ***/
+
+    /*** Start Footer ***/
+    #footer-vertical-line, #footer-horizontal-line {
+        display: none;
+    }
+
+    .social-footer {
+        height: 50%;
+    }
+
+    .social-footer i {
+        height: 32%;
+    }
+
+    /*** End Footer ***/
+
 }
 
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
+
+/* Horizontal tilt of Mobile device */
+@media only screen and (min-width: 500px) {
+
+    /*** Start gallery page ***/
+
     .modal-dialog {
         margin: 1% 1% 1% 1% !important;
     }
 
     .modal-content {
         width: 98vw;
-        height: 90vw;
+        height: 100vh;
     }
+
+    .modalImage .image-wrapper img {
+        width: 100%;
+        height: 80%;
+    }
+
+    /*** End gallery page ***/
+
+}
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+
+
+    /*** Start gallery page ***/
+
+    .modal-dialog {
+        margin: 1% 1% 1% 1% !important;
+    }
+
+    .modal-content {
+        width: 98vw;
+        height: 80vw;
+    }
+
+    .modalImage .image-wrapper img {
+        width: 100%;
+        height: 85%;
+    }
+
+    /*** End gallery page ***/
 
     /*** porfolio page ***/
 
@@ -685,6 +739,7 @@ nav div ul {
 
     /*** porfolio page ***/
 
+    /*** Start Events page ***/
 
     .event-date-container-border {
         padding: 0 0 0 0;
@@ -710,18 +765,12 @@ nav div ul {
         /*border: 1px solid #222222;*/
     }
 
+    /*** End Events page ***/
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
-    .modal-dialog {
-        margin: 1% 1% 1% 1% !important;
-    }
-
-    .modal-content {
-        width: 98vw;
-        height: 90vw;
-    }
 
     p, .paragraph {
         font-size: 1.75rem;
@@ -732,7 +781,27 @@ nav div ul {
         color: #666666;
     }
 
-    /*** porfolio page ***/
+    .bigtext-title {
+        font-family: Lato, Serif;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 1rem;
+    }
+
+    /*** Start gallery page ***/
+
+    .modal-dialog {
+        margin: 1% 1% 1% 1% !important;
+    }
+
+    .modal-content {
+        width: 98vw;
+        height: 90vw;
+    }
+
+    /*** End gallery page ***/
+
+    /*** Start porfolio page ***/
     .orange-header-portfolio {
         margin-left: 45%;
     }
@@ -745,7 +814,9 @@ nav div ul {
         background: url("../../resources/img/orange-background.jpg") repeat-x center;
     }
 
-    /*** porfolio page ***/
+    /*** End porfolio page ***/
+
+    /*** Start Events page ***/
 
     .orange-header {
         padding-top: 1.9%;
@@ -753,13 +824,6 @@ nav div ul {
         font-weight: 600;
         font-size: 3rem;
         line-height: 1.5rem;
-    }
-
-    .bigtext-title {
-        font-family: Lato, Serif;
-        font-weight: 400;
-        font-size: 2rem;
-        line-height: 1rem;
     }
 
     .bigtext-event-date {
@@ -809,6 +873,8 @@ nav div ul {
         /*border: 1px solid #222222;*/
     }
 
+    /*** End events page ***/
+
     /*** Footer ***/
     .footer {
         height: 43%;
@@ -842,6 +908,8 @@ nav div ul {
         height: 90vw;
     }
 
+    /*** Start events page ***/
+
     .event-date-container-border {
         padding: 2.5% 0 0 0;
         text-align: center;
@@ -856,6 +924,8 @@ nav div ul {
         height: 15%;
         margin: 3% 0% 0.5% 0%;
     }
+
+    /*** End events page ***/
 }
 
 /************************************* End Media Queries **********************************************/
