@@ -28,14 +28,24 @@
 
 
         function getBasePath() {
-            if (($window.innerWidth < 800) || ($window.outerWidth < 800) || (screen.width < 800)) {
-                if($window.innerWidth < 500 || ($window.outerWidth < 500) || (screen.width < 500)) {
+            if (largeVerticalScreenCondition()) {
+                if(smallHorizontalScreenCondition()) {
                     return '../resources/img/lessthan300/';
                 }
                 return '../resources/img/lessthan500/';
             }
 
             return '../resources/img/';
+        }
+
+        function largeVerticalScreenCondition() {
+            return (($window.innerWidth < 1025 && $window.innerHeight > 500)
+            || ($window.outerWidth < 1025 && $window.innerHeight > 500)
+            || (screen.width < 1025 && $window.innerHeight > 500));
+        }
+
+        function smallHorizontalScreenCondition() {
+            return ($window.innerWidth < 700) || ($window.outerWidth < 700) || (screen.width < 700);
         }
 
         function init() {
