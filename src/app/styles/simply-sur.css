@@ -472,8 +472,8 @@ nav div ul {
 .bigtext-aside-header {
     font-family: Lato, Serif;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 2rem;
+    line-height: 3rem;
 }
 
 /*************************************  End Contact Us **********************************************/
@@ -698,8 +698,6 @@ nav div ul {
     /*** End gallery page ***/
 
 }
-
-
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
