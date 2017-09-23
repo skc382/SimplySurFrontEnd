@@ -399,7 +399,7 @@ nav div ul {
 
 .section-event {
     background-color: white;
-    max-height: 75%;
+    max-height: 100%;
     margin: 1% 0% 2% 0%;
     border-radius: 0 !important;
     overflow-y: scroll;
@@ -419,59 +419,12 @@ nav div ul {
     margin-bottom: 2%;
 }
 
-.event-date-container {
-    height: 15%;
-    margin: 3% 0% 0.5% 0%;
-}
-
-.event-date-container-border {
-    padding: 2.5% 0 0 0;
-    text-align: center;
-    /*border: 1px solid #222222;*/
-}
-
-.event-date-container-inner {
-    margin: 8% 1% 2% 0%;
-}
-
-.event-description-container {
-    min-height: 15%;
-    /*height: 15%;*/
-    padding: 1% 0 0 0;
-    margin: 1% 0% 0% 0%;
-    text-align: center;
-    /*border: 1px solid #222222;*/
-}
-
-.bigtext-event-date {
-    margin: 1% 1% 1% 1%;
-    font-family: Lato, serif;
-    font-weight: 500;
-    font-size: 80px;
-    line-height: 28px;
-}
-
-.bigtext-event-month {
-    font-family: Lato, serif;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 28px;
-}
-
 /*.bigtext-title {*/
     /*font-family: Lato, Serif;*/
     /*font-weight: 400;*/
     /*font-size: 2rem;*/
     /*line-height: 2rem;*/
 /*}*/
-
-.bigtext-event-time {
-    margin-bottom: 3%;
-    font-family: Lato, serif;
-    font-weight: 400;
-    font-size: 2rem;
-    line-height: 2rem;
-}
 
 /*************************************  End Events **********************************************/
 
@@ -603,6 +556,15 @@ nav div ul {
         min-width: 220px;
     }
 
+    p, .paragraph {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        padding: 2% 2% 2% 2%;
+        text-indent: 2%;
+        text-align: justify;
+        color: #666666;
+    }
+
     /*** Start Footer ***/
     #footer-vertical-line, #footer-horizontal-line {
         display: none;
@@ -647,6 +609,53 @@ nav div ul {
         font-size: 1.5rem;
         line-height: 2rem;
     }
+
+    .bigtext-event-date {
+        margin: 1% 1% 1% 1%;
+        font-family: Lato, serif;
+        font-weight: 500;
+        font-size: 5rem;
+        line-height: 1rem;
+    }
+
+    .bigtext-event-month {
+        font-family: Lato, serif;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 1rem;
+    }
+
+    .bigtext-event-time {
+        margin-bottom: 3%;
+        font-family: Lato, serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 4rem;
+    }
+
+    .event-date-container-border {
+        padding: 5% 0 0 2%;
+        text-align: center;
+        /*border: 1px solid #222222;*/
+    }
+
+    .event-date-container-inner {
+        margin: 2% 1% 2% 0%;
+    }
+
+    .event-date-container {
+        height: 15%;
+        margin: 3% 0% 0.5% 0%;
+    }
+
+    .event-description-container {
+        min-height: 15%;
+        /*height: 15%;*/
+        padding: 6% 0 0 0;
+        margin: 1% 0% 0% 0%;
+        text-align: center;
+        /*border: 1px solid #222222;*/
+    }
 }
 
 /* Small Devices, Tablets */
@@ -676,6 +685,31 @@ nav div ul {
 
     /*** porfolio page ***/
 
+
+    .event-date-container-border {
+        padding: 0 0 0 0;
+        text-align: center;
+        /*border: 1px solid #222222;*/
+    }
+
+    .event-date-container-inner {
+        margin: 1% 1% 2% 0%;
+    }
+
+    .event-date-container {
+        height: 15%;
+        margin: 3% 0% 0.5% 0%;
+    }
+
+    .event-description-container {
+        min-height: 15%;
+        /*height: 15%;*/
+        padding: 1% 0 0 0;
+        margin: 1% 0% 0% 0%;
+        text-align: center;
+        /*border: 1px solid #222222;*/
+    }
+
 }
 
 /* Medium Devices, Desktops */
@@ -689,6 +723,14 @@ nav div ul {
         height: 90vw;
     }
 
+    p, .paragraph {
+        font-size: 1.75rem;
+        line-height: 2rem;
+        padding: 2% 2% 2% 2%;
+        text-indent: 2%;
+        text-align: justify;
+        color: #666666;
+    }
 
     /*** porfolio page ***/
     .orange-header-portfolio {
@@ -705,19 +747,66 @@ nav div ul {
 
     /*** porfolio page ***/
 
-    .bigtext-title {
-        font-family: Lato, Serif;
-        font-weight: 400;
-        font-size: 2rem;
-        line-height: 3rem;
-    }
-
     .orange-header {
         padding-top: 1.9%;
         font-family: Lato, sans-serif;
         font-weight: 600;
         font-size: 3rem;
         line-height: 1.5rem;
+    }
+
+    .bigtext-title {
+        font-family: Lato, Serif;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 1rem;
+    }
+
+    .bigtext-event-date {
+        margin: 1% 1% 1% 1%;
+        font-family: Lato, serif;
+        font-weight: 500;
+        font-size: 6rem;
+        line-height: 1rem;
+    }
+
+    .bigtext-event-month {
+        font-family: Lato, serif;
+        font-weight: 500;
+        font-size: 2.8rem;
+        line-height: 3rem;
+    }
+
+    .bigtext-event-time {
+        margin-bottom: 3%;
+        font-family: Lato, serif;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .event-date-container-border {
+        padding: 0 0 0 0;
+        text-align: center;
+        /*border: 1px solid #222222;*/
+    }
+
+    .event-date-container-inner {
+        margin: 1% 1% 2% 0%;
+    }
+
+    .event-date-container {
+        height: 8%;
+        margin: 3% 0% 0.5% 0%;
+    }
+
+    .event-description-container {
+        min-height: 15%;
+        /*height: 15%;*/
+        padding: 1% 0 0 0;
+        margin: 1% 0% 0% 0%;
+        text-align: center;
+        /*border: 1px solid #222222;*/
     }
 
     /*** Footer ***/
@@ -753,6 +842,20 @@ nav div ul {
         height: 90vw;
     }
 
+    .event-date-container-border {
+        padding: 2.5% 0 0 0;
+        text-align: center;
+        /*border: 1px solid #222222;*/
+    }
+
+    .event-date-container-inner {
+        margin: 8% 1% 2% 0%;
+    }
+
+    .event-date-container {
+        height: 15%;
+        margin: 3% 0% 0.5% 0%;
+    }
 }
 
 /************************************* End Media Queries **********************************************/
