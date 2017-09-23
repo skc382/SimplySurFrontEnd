@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 html, body {
-    /*padding-top: 1.79%;*/
+    overflow-x: hidden;
+    right: -20rem;
+    min-width: 100vw;
+    margin: 0%;
+    padding: 0%;
     font-family: Lato, sans-serif;
     font-weight: 300;
     font-size: 1rem;
@@ -81,25 +85,12 @@ ul {
     line-height: 1.5rem;
 }
 
+
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
     display: none !important;
 }
 
 /*************************************  Begin navigation **********************************************/
-
-div.navbar-collapse.collapse {
-    display: block;
-    overflow: hidden;
-    max-height: 0px;
-    -webkit-transition: max-height .3s ease;
-    -moz-transition: max-height .3s ease;
-    -o-transition: max-height .3s ease;
-    transition: max-height .3s ease;
-}
-
-div.navbar-collapse.collapse.in {
-    max-height: 2000px;
-}
 
 .header {
     /*top: -4rem;*/
@@ -190,7 +181,7 @@ nav div ul {
 /*************************************  Begin Footer **********************************************/
 
 .footer {
-    height: 43%;
+    height: 73%;
     background: #0f151a;
 }
 
@@ -560,7 +551,7 @@ nav div ul {
 
 .profile-feature-name {
     height: 250px;
-    width: 350px;
+    width: 325px;
     color: white;
     background-color: #ff5f3f;
     padding: 0 0 0 0;
@@ -591,7 +582,7 @@ nav div ul {
 /*************************************  End Classes **********************************************/
 
 .orange-header-portfolio {
-    margin-left: 45%;
+    /*margin-left: 45%;*/
 }
 
 .content-container-portfolio {
@@ -613,6 +604,20 @@ nav div ul {
         min-width: 220px;
     }
 
+    div.navbar-collapse.collapse {
+        display: block;
+        overflow: hidden;
+        max-height: 0px;
+        -webkit-transition: max-height .3s ease;
+        -moz-transition: max-height .3s ease;
+        -o-transition: max-height .3s ease;
+        transition: max-height .3s ease;
+    }
+
+    div.navbar-collapse.collapse.in {
+        max-height: 2000px;
+    }
+
     /*** Footer ***/
     #footer-vertical-line, #footer-horizontal-line {
         display: none;
@@ -631,11 +636,18 @@ nav div ul {
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 320px) {
     .img {
         width: 55%;
         min-width: 220px;
     }
+
+    /*** porfolio page ***/
+    .orange-header-portfolio {
+        margin-left: 30%;
+    }
+    /*** porfolio page ***/
+
 }
 
 /* Small Devices, Tablets */
@@ -648,6 +660,16 @@ nav div ul {
         width: 98vw;
         height: 90vw;
     }
+
+    /*** porfolio page ***/
+
+    .orange-header-portfolio {
+        margin-left: 40%;
+    }
+
+    /*** porfolio page ***/
+
+
 
 }
 
@@ -662,7 +684,19 @@ nav div ul {
         height: 90vw;
     }
 
+
+    /*** porfolio page ***/
+    .orange-header-portfolio {
+        margin-left: 45%;
+    }
+
+    /*** porfolio page ***/
+
     /*** Footer ***/
+    .footer {
+        height: 43%;
+    }
+
     #footer-vertical-line, #footer-horizontal-line {
         display: block;
     }

@@ -1,6 +1,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>SimplySur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../resources/img/simplysur_logo_2.ico" rel="shortcut icon" type="image/x-icon"
           th:href="@{/webapp/SimplySurFrontEnd/src/resources/img/simplysur_logo_2.ico}"/>
     <link href="styles/simply-sur.css" rel="stylesheet"
@@ -13,101 +14,102 @@
 </head>
 <body ng-app="ui.simply.sur">
 
-<nav class="navbar navbar-default header" role="navigation">
+    <nav class=" navbar navbar-default header" role="navigation">
 
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" ng-init="navCollapsed = true"
-                ng-click="navCollapsed = !navCollapsed">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <img src="../resources/img/SimplySur_Logos-1.png" class="logo-icon">
-        <span class="logo">SimplySur</span>
-    </div>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" ng-init="navCollapsed = true"
+                    ng-click="navCollapsed = !navCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img src="../resources/img/SimplySur_Logos-1.png" class="logo-icon">
+            <span class="logo">SimplySur</span>
+        </div>
 
-    <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'">
+        <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'">
 
-        <ul class="nav navbar-nav navbar-right">
-            <li class="menu-content">
-                <a href="#" ui-sref="home" ui-sref-active="active" ng-click="navCollapsed=true">Home</a>
-            </li>
-            <li class="menu-seperator hidden-xs">
-                <a href="#">/</a>
-            </li>
-            <li class="menu-content">
-                <a href="#" ui-sref="portfolio" ui-sref-active="active" ng-click="navCollapsed=true">Portfolio</a>
-            </li>
-            <li class="menu-seperator hidden-xs">
-                <a href="#">/</a>
-            </li>
-            <li class="menu-content">
-                <a href="#" ui-sref="classes" ui-sref-active="active" ng-click="navCollapsed=true">Classes</a>
-            </li>
-            <li class="menu-seperator hidden-xs">
-                <a href="#">/</a>
-            </li>
-            <li class="menu-content">
-                <a href="#" ui-sref="gallery" ui-sref-active="active" ng-click="navCollapsed=true">Gallery</a>
-            </li>
-            <li class="menu-seperator hidden-xs">
-                <a href="#">/</a>
-            </li>
-            <li class="menu-content">
-                <a href="#" ui-sref="events" ui-sref-active="selected" ng-click="navCollapsed=true">Events</a>
-            </li>
-            <li class="menu-seperator hidden-xs">
-                <a href="#">/</a>
-            </li>
-            <li class="menu-content">
-                <a href="#" ui-sref="about" ui-sref-active="active" ng-click="navCollapsed=true">Contact Us</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-<section class="content">
-    <ui-view autoscroll="true"></ui-view>
-</section>
-
-<!--Begin Social footer-->
-<footer class="footer container-fluid ng-cloak">
-    <div class="row">
-        <div class=" col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-lg-offset-2">
-            <ul class="list-inline social-footer row">
-                <li class="col-xs-12 col-sm-12 col-md-1 col-lg-2">
-                    <a href="https://www.facebook.com/SimplySur-503686209706809/" class="col-xs-12" target="_blank">
-                        <i class="fa fa-facebook col-xs-12" aria-hidden="true"></i></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="menu-content">
+                    <a href="#" ui-sref="home" ui-sref-active="active" ng-click="navCollapsed=true">Home</a>
                 </li>
-                <li class="col-xs-12 col-sm-12 col-md-1 col-lg-2">
-                    <a href="https://plus.google.com/112611800445681044311" class="col-xs-12" target="_blank">
-                        <i class="fa fa-google-plus col-xs-12" aria-hidden="true"></i></a>
+                <li class="menu-seperator hidden-xs">
+                    <a href="#">/</a>
                 </li>
-                <li class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
-                    <div id="footer-vertical-line"></div>
+                <li class="menu-content">
+                    <a href="#" ui-sref="portfolio" ui-sref-active="active" ng-click="navCollapsed=true">Portfolio</a>
                 </li>
-                <li class="col-xs-12 col-sm-12 col-md-1 col-lg-2">
-                    <a href="https://www.youtube.com/channel/UC9fH7ksyFTQNHV7tVsNLtOQ" class="col-xs-12" target="_blank">
-                        <i class="fa fa-youtube col-xs-12" aria-hidden="true"></i></a>
+                <li class="menu-seperator hidden-xs">
+                    <a href="#">/</a>
                 </li>
-                <li class="col-xs-12 col-sm-12 col-md-1 col-lg-2">
-                    <a href="https://www.instagram.com/simplysurschool/" class="col-xs-12" target="_blank">
-                        <i class="fa fa-instagram col-xs-12" aria-hidden="true"></i></a>
+                <li class="menu-content">
+                    <a href="#" ui-sref="classes" ui-sref-active="active" ng-click="navCollapsed=true">Classes</a>
+                </li>
+                <li class="menu-seperator hidden-xs">
+                    <a href="#">/</a>
+                </li>
+                <li class="menu-content">
+                    <a href="#" ui-sref="gallery" ui-sref-active="active" ng-click="navCollapsed=true">Gallery</a>
+                </li>
+                <li class="menu-seperator hidden-xs">
+                    <a href="#">/</a>
+                </li>
+                <li class="menu-content">
+                    <a href="#" ui-sref="events" ui-sref-active="selected" ng-click="navCollapsed=true">Events</a>
+                </li>
+                <li class="menu-seperator hidden-xs">
+                    <a href="#">/</a>
+                </li>
+                <li class="menu-content">
+                    <a href="#" ui-sref="about" ui-sref-active="active" ng-click="navCollapsed=true">Contact Us</a>
                 </li>
             </ul>
-            <div class="">
-                <div id="footer-horizontal-line"></div>
+        </div>
+    </nav>
+
+    <section class="content">
+        <ui-view autoscroll="true"></ui-view>
+    </section>
+
+    <!--Begin Social footer-->
+    <footer class="footer ng-cloak">
+        <div class="row">
+            <div class=" col-xs-offset-0 col-sm-offset-0 col-md-offset-2 col-lg-offset-2">
+                <ul class="list-inline social-footer row">
+                    <li class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                        <a href="https://www.facebook.com/SimplySur-503686209706809/" class="col-xs-12" target="_blank">
+                            <i class="fa fa-facebook col-xs-12" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                        <a href="https://plus.google.com/112611800445681044311" class="col-xs-12" target="_blank">
+                            <i class="fa fa-google-plus col-xs-12" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
+                        <div id="footer-vertical-line"></div>
+                    </li>
+                    <li class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                        <a href="https://www.youtube.com/channel/UC9fH7ksyFTQNHV7tVsNLtOQ" class="col-xs-12"
+                           target="_blank">
+                            <i class="fa fa-youtube col-xs-12" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                        <a href="https://www.instagram.com/simplysurschool/" class="col-xs-12" target="_blank">
+                            <i class="fa fa-instagram col-xs-12" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+                <div class="">
+                    <div id="footer-horizontal-line"></div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="footer-copyright col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            &copy; Copyright 2017: Simply Sur
+        <div class="row">
+            <div class="footer-copyright col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                &copy; Copyright 2017: Simply Sur
+            </div>
         </div>
-    </div>
-</footer>
-<!--End Social footer-->
+    </footer>
+    <!--End Social footer-->
 
 <script src="../../bower_components/angular/angular.min.js"
         th:src="@{/webjars/angular/1.6.1/angular.min.js}"></script>
