@@ -236,14 +236,6 @@ nav div ul {
     cursor: hand;
 }
 
-.bigtext-carousel-homePage-title {
-    margin-bottom: 40%;
-    font-family: Lato, serif;
-    font-weight: 500;
-    font-size: 5.5rem;
-    line-height: 2rem;
-}
-
 .jumbotron-home-page {
     height: 30%;
     margin-bottom: 0 !important;
@@ -253,30 +245,6 @@ nav div ul {
     background-size: cover;
     background: url("../../resources/img/orange-background.jpg") repeat center;
     /*background-attachment: fixed;*/
-}
-
-.bigtext-homePage-title {
-    margin-bottom: 2%;
-    font-family: Lato, serif;
-    font-weight: 700;
-    font-size: 4rem;
-    line-height: 1.5rem;
-}
-
-.bigtext-homePage-title span {
-    margin-left: 13%
-}
-
-.bigtext-homePage-description span {
-    margin-left: 17%
-}
-
-.bigtext-homePage-description {
-    padding: 0 0 0 0 !important;
-    font-family: Lato, serif;
-    font-weight: 200;
-    font-size: 3rem;
-    line-height: 1.5rem;
 }
 
 .third-section {
@@ -302,35 +270,6 @@ nav div ul {
 .features-container {
     margin-top: 3.5%;
     padding: 2% 20% 2% 20%;
-}
-
-.features-container-inner {
-    padding: 2% 2% 2% 2%;
-}
-
-.feature {
-    height: 40%;
-    width: 80%;
-    border: 3px solid #ff5f3f;
-}
-
-.bigtext-feature {
-    height: 100%;
-    width: 100%;
-    padding-top: 10%;
-    color: white;
-    background-color: #0f151a;
-    opacity: 0;
-    transition: all ease 0.8s;
-    font-family: Lato, serif;
-    font-weight: 200;
-    font-size: 1.8em;
-    line-height: 8em;
-}
-
-.bigtext-feature:hover {
-    opacity: 0.8;
-    cursor: hand;
 }
 
 .feature-hindustani {
@@ -520,10 +459,6 @@ nav div ul {
     line-height: 1em;
 }
 
-.bigtext-crazy-classes-feature {
-
-}
-
 /*************************************  End Classes **********************************************/
 
 .orange-header-portfolio {
@@ -566,6 +501,69 @@ nav div ul {
         font-size: 1.5rem;
         line-height: 2rem;
     }
+
+    /*** Start Home Page ***/
+
+    .bigtext-carousel-homePage-title {
+        margin-bottom: 27rem;
+        font-family: Lato, serif;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 1.75rem;
+    }
+
+    .feature {
+        height: 15rem;
+        width: 20rem;
+        border: 3px solid #ff5f3f;
+    }
+
+    .bigtext-homePage-title {
+        margin-bottom: 2%;
+        font-family: Lato, serif;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 1.75rem;
+    }
+
+    .bigtext-homePage-description {
+        padding: 0 0 0 0 !important;
+        font-family: Lato, serif;
+        text-align: center;
+        font-weight: 200;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    .bigtext-homePage-title span {
+        margin-left: 13%
+    }
+
+    .bigtext-homePage-description span {
+        margin-left: 9%
+    }
+
+    .bigtext-feature {
+        height: 100%;
+        width: 100%;
+        padding: 7% 0% 0% 20%;
+        color: white;
+        background-color: #0f151a;
+        opacity: 0.7;
+        transition: all ease 0.8s;
+        font-family: Lato, serif;
+        font-weight: 200;
+        font-size: 1em;
+        line-height: 8em;
+    }
+
+    .bigtext-feature:hover {
+        opacity: 0.8;
+        cursor: hand;
+    }
+
+    /*** End Home Page ***/
 
     /*** porfolio page ***/
     .orange-header-portfolio {
@@ -651,7 +649,7 @@ nav div ul {
     .event-description-container {
         min-height: 15%;
         /*height: 15%;*/
-        padding: 6% 0 0 0;
+        padding: 1% 0 0 0;
         margin: 1% 0% 0% 0%;
         text-align: center;
         /*border: 1px solid #222222;*/
@@ -679,6 +677,63 @@ nav div ul {
 /* Horizontal tilt of Mobile device */
 @media only screen and (min-width: 500px) {
 
+    /*** Start Home Page ***/
+
+    .bigtext-carousel-homePage-title {
+        margin-bottom: 13rem;
+    }
+
+    .feature {
+        height: 20rem;
+        width: 35rem;
+        border: 3px solid #ff5f3f;
+    }
+
+    .bigtext-homePage-title {
+        margin-bottom: 2%;
+        font-family: Lato, serif;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 1.75rem;
+    }
+
+    .bigtext-homePage-description {
+        padding: 0 0 0 0 !important;
+        font-family: Lato, serif;
+        font-weight: 200;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    .bigtext-homePage-title span {
+        margin-left: 11%
+    }
+
+    .bigtext-homePage-description span {
+        margin-left: 7%
+    }
+
+    .bigtext-feature {
+        height: 100%;
+        width: 100%;
+        padding: 6% 0% 0% 28%;
+        color: white;
+        background-color: #0f151a;
+        opacity: 0.6;
+        transition: all ease 0.8s;
+        font-family: Lato, serif;
+        font-weight: 200;
+        font-size: 1.5em;
+        line-height: 8em;
+    }
+
+    .bigtext-feature:hover {
+        opacity: 0.8;
+        cursor: hand;
+    }
+
+    /*** End Home Page ***/
+
     /*** Start gallery page ***/
 
     .modal-dialog {
@@ -697,11 +752,81 @@ nav div ul {
 
     /*** End gallery page ***/
 
+    .event-description-container {
+        min-height: 15%;
+        /*height: 15%;*/
+        padding: 6% 0 0 0;
+        margin: 1% 0% 0% 0%;
+        text-align: center;
+        /*border: 1px solid #222222;*/
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
 
+    /*** Start Home Page ***/
+
+    .bigtext-carousel-homePage-title {
+        margin-bottom: 42rem;
+        font-size: 3.5rem;
+    }
+
+    .feature {
+        height: 30rem;
+        width: 35rem;
+        border: 3px solid #ff5f3f;
+    }
+
+    .features-container-inner {
+        padding: 2% 2% 2% 2%;
+    }
+
+    .bigtext-homePage-title {
+        margin-bottom: 2%;
+        font-family: Lato, serif;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 2.5rem;
+    }
+
+    .bigtext-homePage-description {
+        padding: 0 0 0 0 !important;
+        font-family: Lato, serif;
+        font-weight: 200;
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .bigtext-homePage-title span {
+        margin-left: 11%
+    }
+
+    .bigtext-homePage-description span {
+        margin-left: 7%
+    }
+
+    .bigtext-feature {
+        height: 100%;
+        width: 100%;
+        padding: 7% 0% 0% 20%;
+        color: white;
+        background-color: #0f151a;
+        opacity: 0.6;
+        transition: all ease 0.8s;
+        font-family: Lato, serif;
+        font-weight: 200;
+        font-size: 1.8em;
+        line-height: 8em;
+    }
+
+    .bigtext-feature:hover {
+        opacity: 0.8;
+        cursor: hand;
+    }
+
+
+    /*** End Home Page ***/
 
     /*** Start gallery page ***/
 
@@ -786,6 +911,67 @@ nav div ul {
         line-height: 1rem;
     }
 
+    /*** Start Home Page ***/
+
+    .bigtext-carousel-homePage-title {
+        margin-bottom: 28rem;
+        font-family: Lato, serif;
+        font-weight: 500;
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
+    .feature {
+        height: 25rem;
+        width: 35rem;
+        border: 3px solid #ff5f3f;
+    }
+
+    .bigtext-homePage-title {
+        margin-bottom: 2%;
+        font-family: Lato, serif;
+        font-weight: 700;
+        font-size: 3.75rem;
+        line-height: 3.5rem;
+    }
+
+    .bigtext-homePage-title span {
+        margin-left: 11%
+    }
+
+    .bigtext-homePage-description span {
+        margin-left: 7%
+    }
+
+    .bigtext-homePage-description {
+        padding: 0 0 0 0 !important;
+        font-family: Lato, serif;
+        font-weight: 200;
+        font-size: 3rem;
+        line-height: 1.5rem;
+    }
+
+    .bigtext-feature {
+        height: 100%;
+        width: 100%;
+        padding: 5% 0% 0% 0%;
+        color: white;
+        background-color: #0f151a;
+        opacity: 0.6;
+        transition: all ease 0.8s;
+        font-family: Lato, serif;
+        font-weight: 200;
+        font-size: 1.8em;
+        line-height: 8em;
+    }
+
+    .bigtext-feature:hover {
+        opacity: 0.9;
+        cursor: hand;
+    }
+
+    /*** End Home Page ***/
+
     /*** Start gallery page ***/
 
     .modal-dialog {
@@ -865,7 +1051,7 @@ nav div ul {
     .event-description-container {
         min-height: 15%;
         /*height: 15%;*/
-        padding: 1% 0 0 0;
+        padding: 4% 0 0 0;
         margin: 1% 0% 0% 0%;
         text-align: center;
         /*border: 1px solid #222222;*/
