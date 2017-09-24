@@ -12,6 +12,7 @@
         var self = this;
 
         self.getIntroduction = getIntroduction;
+        self.sendEmail = sendEmail;
 
         function getIntroduction() {
             var intro = 'Welcome to Simplysur ( school of Hindustani classical music), started in India in 1996 with the name of ' +
@@ -22,6 +23,18 @@
             return intro;
 
         }
+        
+        function sendEmail() {
+            $http({
+                method: 'GET',
+                url: '/email'
+            }).then(function successCallback(response) {
+                console.log(response);
+            }, function errorCallback(response) {
+                console.log(response);
+            });
+        }
+        
     }
 
 })();
