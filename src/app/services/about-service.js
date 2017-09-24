@@ -23,18 +23,20 @@
             return intro;
 
         }
-        
-        function sendEmail() {
-            $http({
-                method: 'GET',
-                url: '/email'
-            }).then(function successCallback(response) {
-                console.log(response);
-            }, function errorCallback(response) {
-                console.log(response);
-            });
+
+        function sendEmail(payload) {
+            var defer = $q.defer();
+
+            $http.post("/email", payload, {})
+                .then(function successCallback(response) {
+                    defer.resolve(response);
+                }, function errorCallback(err) {
+                    defer.reject(err);
+                });
+
+            return defer.promise;
         }
-        
+
     }
 
 })();
