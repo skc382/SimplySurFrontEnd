@@ -49,9 +49,9 @@
         }
 
         function init() {
-            angular.element($window).on('resize', function () {
-                $state.reload();
-            });
+            // angular.element($window).on('resize', function () {
+            //     $state.reload();
+            // });
 
             for (var i = 103; i >=101; i--) {
                 addSlide(i);
