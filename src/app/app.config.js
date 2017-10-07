@@ -16,15 +16,28 @@
             controllerAs: 'homeCtrl'
         };
 
-        var galleryState = {
-            name: 'gallery',
-            url: '/gallery',
+        var talentShowcaseGalleryState = {
+            name: 'talentshowcase',
+            url: '/talentshowcase',
             templateUrl: 'gallery-page/gallery.page.html',
             controller: 'GalleryController',
             controllerAs: 'galleryCtrl',
             resolve: {
                 images: function (ImageService) {
-                    return ImageService.getAllImageThumbnails();
+                    return ImageService.getGeneralImageThumbnails();
+                }
+            }
+        };
+
+        var ramlilaGalleryState = {
+            name: 'ramlila',
+            url: '/ramlila',
+            templateUrl: 'gallery-page/gallery.page.html',
+            controller: 'GalleryController',
+            controllerAs: 'galleryCtrl',
+            resolve: {
+                images: function (ImageService) {
+                    return ImageService.getRamlilaImageThumbnails();
                 }
             }
         };
@@ -69,7 +82,8 @@
 
         $stateProvider
             .state(homeState)
-            .state(galleryState)
+            .state(talentShowcaseGalleryState)
+            .state(ramlilaGalleryState)
             .state(eventsState)
             .state(aboutState)
             .state(classesState)

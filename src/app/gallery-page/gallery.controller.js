@@ -3,11 +3,12 @@
 
     angular.module('ui.simply.sur').controller('GalleryController', GalleryController);
 
-    GalleryController.$inject=['images'];
+    GalleryController.$inject=['images', '$state'];
 
-    function GalleryController(images) {
+    function GalleryController(images, $state) {
         var vm = this;
-
+        vm.state = $state;
         vm.imageIds = images;
+
     }
 })();
