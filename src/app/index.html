@@ -49,8 +49,18 @@
             <li class="menu-seperator hidden-xs">
                 <a href="#">/</a>
             </li>
-            <li class="menu-content">
-                <a href="#" ui-sref="gallery" ui-sref-active="active" ng-click="navCollapsed=true">Gallery</a>
+            <li class="menu-content" uib-dropdown on-toggle="toggled(open)">
+                <a href="#" uib-dropdown-toggle>Gallery</a>
+                <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                    <li>
+                        <a href="#" ui-sref="ramlila" ui-sref-active="active" ng-click="navCollapsed=true">RamLila 2016</a>
+                    </li>
+                    <li>
+                        <a href="#" ui-sref="talentshowcase" ui-sref-active="active" ng-click="navCollapsed=true"
+                           style="border-top: 0.1rem solid #666666">Talent Showcase</a>
+                    </li>
+
+                </ul>
             </li>
             <li class="menu-seperator hidden-xs">
                 <a href="#">/</a>
