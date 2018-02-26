@@ -11,6 +11,9 @@
 
     <link rel="stylesheet" href="../../bower_components/components-font-awesome/css/font-awesome.min.css"
           th:href="@{/webjars/components-font-awesome/4.7.0/css/font-awesome.min.css}"/>
+
+    <script src="audio.js"
+            th:src="@{/webapp/SimplySurFrontEnd/src/app/audio.js}"></script>
 </head>
 <body ng-app="ui.simply.sur">
 
@@ -26,6 +29,13 @@
         </button>
         <img src="../resources/img/SimplySur_Logos-1.png" class="logo-icon">
         <span class="logo">SimplySur</span>
+        <a href="" onclick="muteAudio()">
+            <i class="fa fa-volume-up" id="audio-icon"></i>
+        </a>
+
+        <audio src="../resources/audio/holi.mp3" autoplay hidden>
+            <p>browser does not support the audio element.</p>
+        </audio>
     </div>
 
     <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'">
@@ -135,6 +145,9 @@
 
 <script src="../../bower_components/angular-ui-router/release/angular-ui-router.min.js"
         th:src="@{/webjars/angular-ui-router/0.4.2/release/angular-ui-router.min.js}"></script>
+
+<script src="../resources/audio/holi.mp3"
+        th:src="@{/webapp/SimplySurFrontEnd/src/resources/audio/holi.mp3}"></script>
 
 <script src="app.config.js"
         th:src="@{/webapp/SimplySurFrontEnd/src/app/app.config.js}"></script>
