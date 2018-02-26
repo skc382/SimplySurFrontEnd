@@ -110,7 +110,7 @@ div.navbar-collapse.collapse.in {
     /*width: inherit;*/
     /*background-size: cover;*/
     /*background: url("../../resources/img/RadioHead-Clothify.resized.png") no-repeat center;*/
-    /*padding: 7% 0 0 40%;*/
+    padding-right: 1rem;
     color: #ff5f3f;
     font-family: Lato, sans-serif;
     font-weight: 900;
@@ -120,6 +120,11 @@ div.navbar-collapse.collapse.in {
 
 .logo li:hover {
     cursor: hand;
+}
+
+#audio-icon {
+    font-size: 2rem;
+    color: #70291b
 }
 
 nav div ul {
