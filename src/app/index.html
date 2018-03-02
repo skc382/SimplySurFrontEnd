@@ -1,7 +1,12 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>SimplySur</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="../resources/img/simplysur_logo_2.ico" rel="shortcut icon" type="image/x-icon"
           th:href="@{/webapp/SimplySurFrontEnd/src/resources/img/simplysur_logo_2.ico}"/>
     <link href="styles/simply-sur.css" rel="stylesheet"
@@ -12,10 +17,8 @@
     <link rel="stylesheet" href="../../bower_components/components-font-awesome/css/font-awesome.min.css"
           th:href="@{/webjars/components-font-awesome/4.7.0/css/font-awesome.min.css}"/>
 
-    <script src="audio.js"
-            th:src="@{/webapp/SimplySurFrontEnd/src/app/audio.js}"></script>
 </head>
-<body ng-app="ui.simply.sur">
+<body ng-app="ui.simply.sur" ng-controller="AppController as appCtrl">
 
 <nav class=" navbar navbar-default header" role="navigation">
 
@@ -29,11 +32,12 @@
         </button>
         <img src="../resources/img/SimplySur_Logos-1.png" class="logo-icon">
         <span class="logo">SimplySur</span>
-        <a href="" onclick="muteAudio()">
-            <i class="fa fa-volume-up" id="audio-icon"></i>
+        <a href="" id="audio-icon" ng-click="appCtrl.toggleMute()" ng-if="!appCtrl.isMobile">
+            <i ng-class="appCtrl.muteClass"></i>
         </a>
 
-        <audio src="../resources/audio/holi.mp3" autoplay hidden>
+        <audio src="../resources/audio/holi.mp3" type="audio/mpeg"
+               ng-if="!appCtrl.isMobile" autoplay hidden>
             <p>browser does not support the audio element.</p>
         </audio>
     </div>
@@ -146,11 +150,11 @@
 <script src="../../bower_components/angular-ui-router/release/angular-ui-router.min.js"
         th:src="@{/webjars/angular-ui-router/0.4.2/release/angular-ui-router.min.js}"></script>
 
-<script src="../resources/audio/holi.mp3"
-        th:src="@{/webapp/SimplySurFrontEnd/src/resources/audio/holi.mp3}"></script>
-
 <script src="app.config.js"
         th:src="@{/webapp/SimplySurFrontEnd/src/app/app.config.js}"></script>
+
+<script src="app.controller.js"
+        th:src="@{/webapp/SimplySurFrontEnd/src/app/app.controller.js}"></script>
 
 <script src="services/image.service.js"
         th:src="@{/webapp/SimplySurFrontEnd/src/app/services/image.service.js}"></script>
