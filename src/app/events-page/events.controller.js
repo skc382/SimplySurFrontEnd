@@ -7,6 +7,10 @@
         var vm = this;
 
         vm.futureEvents =[
+
+        ];
+
+        vm.pastEvents =[
             {
                 'date': {
                     'day': 29,
@@ -14,26 +18,22 @@
                     'Year': 2018,
 
                 },
-                'time': '12:30 pm to 5:30 pm',
+                'time': '12 pm to 5 pm',
                 'details': {
                     'title': '<b><u>PHAAG</u></b>',
-                    'description':'<a href="https://www.eventbrite.com/e/phaag-holi-festival-tickets-43282829107" ' +
-                    'target="_blank id="mail-anchor"><b> Buy Tickets Now! </b></a> <br><br>' +
-                    '<b>SIMPLY SUR</b> is back with another event and this is the favourite festival of all. Yes the most awaited event of the year <b>HOLI PARTY</b> <br><br>' +
-                    'H - Happiness <br><br>' +
-                    'O - Ocassion of forgiveness <br><br>' +
-                    'L - Love <br><br>' +
-                    'I - Inspiring <br><br>' +
+                    'description':
+                    '<b>SIMPLY SUR</b> is back with another event and this is the favourite festival of all. Yes the most awaited event of the year <b>HOLI PARTY</b> <br>' +
+                    'H - Happiness <br>' +
+                    'O - Ocassion of forgiveness <br>' +
+                    'L - Love <br>' +
+                    'I - Inspiring <br>' +
                     'Come join us with your friends and family to celebrate this festival of colors and fun. <br>' +
                     'Whether you are from India or not, you are more than welcome to come to the party and have a great time. <br><br>' +
                     '<b><u>Come and checkout our awesome arrangements : </u></b> <br>' +
-                    'FOOD, <br> DHOL,<br> DJ,<br> OPEN SPACE TO PLAY WITH COLORS, <br> SWAGS <br> and much more.'
+                    'FOOD, DHOL, DJ,<br> OPEN SPACE TO PLAY WITH COLORS, <br> SWAGS <br> and much more.'
 
                 }
-            }
-        ];
-
-        vm.pastEvents =[
+            },
             {
                 'date': {
                     'day': 14,

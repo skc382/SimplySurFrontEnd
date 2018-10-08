@@ -1,6 +1,6 @@
 <div class="container-fluid content-container">
     <section class="row">
-        <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+        <div uib-carousel active="active" interval="homeCtrl.myInterval" no-wrap="homeCtrl.noWrapSlides">
             <div uib-slide ng-repeat="slide in homeCtrl.slides track by slide.id" index="slide.id">
                 <img class="carousel-home-page" ng-src="{{slide.image}}" ui-sref="events">
                 <div class="carousel-caption">
